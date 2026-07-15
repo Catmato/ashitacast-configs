@@ -10,13 +10,13 @@
 
 		
 		
-		<set name="Resting" BaseSet="Standard">
+		<set name="resting" BaseSet="standard">
 			<main>Chatoyant Staff</main>
 			<sub>Achaq grip</sub>
 			<waist>Cleric's Belt</waist>
 		</set>
 		
-		<set name="FullMND" BaseSet="Standard">
+		<set name="fullmnd" BaseSet="standard">
 			<main>Ababinili +1</main>
 			<sub>Achaq Grip</sub>
 			<head>Vanya Hood</head>
@@ -30,14 +30,14 @@
 			<legs>Chironic Hose</legs>
 			<feet>Manabyss Pigaches</feet>
 		</set>
-		<set name="Stoneskin" BaseSet="enhancingduration">
+		<set name="stoneskin" BaseSet="enhancingduration">
 			<neck>Nodens Gorget</neck>
 			<hands>Carapacho cuffs</hands>
 			<waist>Siegel Sash</waist>
 		</set>
 		
 		
-		<set name="Divine" BaseSet="FullMND">
+		<set name="divine" BaseSet="fullmnd">
 			<body>Ebers Bliaut +1</body>
 			<hands>Piety Mitts +3</hands>
 			<waist>Goading Belt</waist>
@@ -61,7 +61,7 @@
 			<feet>Hygieia Clogs +1</feet>				
 		</set>
 		
-		<set name="fastcast" BaseSet="Standard">
+		<set name="fastcast" BaseSet="standard">
 			<main>Oranyan</main>
 			<ammo>Incantor Stone</ammo>
 			<head>Welkin crown</head>
@@ -85,7 +85,7 @@
 			<legs>Doyen pants</legs>
 		</set>
 		
-		<set name="Enf">
+		<set name="enf">
 			<main>Venabulum</main>
 			<sub>Enki Strap</sub>
 			<head>Befouled Crown</head>
@@ -106,23 +106,23 @@
 			<waist>Goading Belt</waist>
 		</set>
 		
-		<set name="Dark" BaseSet="Enf">
+		<set name="dark" BaseSet="enf">
 			<hands>Inyan. Dastanas +2</hands>
 			<rring>Excelsis Ring</rring>
 			<back>Toro Cape</back>
 			<legs>Chironic Hose</legs>
 		</set>
 		
-		<set name="Slow" BaseSet="Enf">
+		<set name="slow" BaseSet="enf">
 		</set>
-		<set name="Paralyze" BaseSet="Enf">
+		<set name="paralyze" BaseSet="enf">
 		</set>
-		<set name="Silence" BaseSet="Enf">
+		<set name="silence" BaseSet="enf">
 		</set>
-		<set name="Addle" BaseSet="Enf">
+		<set name="addle" BaseSet="enf">
 		</set>
 
-		<set name="Barspells" BaseSet="enhancingduration">
+		<set name="barspells" BaseSet="enhancingduration">
 			<main>Beneficus</main>
 			<sub>Culminus</sub>
 			<head>Ebers Cap +1</head>
@@ -152,19 +152,15 @@
 			<feet>Battlecast Gaiters</feet>
 		</set>
 		
-		<set name="Dia" BaseSet="haste">
+		<set name="dia" BaseSet="haste">
 			<hands augment="S6317967688368262">Chironic Gloves</hands>
 			<ear2>Gifted Earring</ear2>
 			<waist>Tarutaru Sash</waist>
 		</set>
-
-		<set name="krakentp" baseset="tp">
-		</set>
-
-		<set name="Banish" BaseSet="nuke">
+		<set name="banish" BaseSet="nuke">
 			<hands>Piety Mitts +3</hands>
 		</set>
-		<set name="ws" baseset="TP">
+		<set name="ws" baseset="tp">
 			<head>Chironic hat</head>
 			<body>Ayanmo Corazza +2</body>
 		</set>
@@ -359,7 +355,7 @@
 			<back>Twilight cape</back>
 			<waist>Korin Obi</waist>
 		</set>
-		<set name="THHands">
+		<set name="thhands">
 			<hands augment="S6317967688368262">Chironic Gloves</hands>
 		</set>
 
@@ -381,7 +377,7 @@
 		<set name="boon" baseset="blackhalo">
 			<waist>Luminary Sash</waist>
 		</set>
-		<set name="TH">
+		<set name="th">
 			<hands augment="S6317967688368262">Chironic Gloves</hands>
 			<waist augment="S168034451">Tarutaru Sash</waist>
 		</set>
@@ -554,7 +550,7 @@
 			<ring2>Prolix Ring</ring2>
 			<back>Thauma. Cape</back>
 		</set>
-		<set name="Auspice" baseset="enhancingduration">
+		<set name="auspice" baseset="enhancingduration">
 			<feet>Ebers Duckbills +1</feet>
 		</set>
 	</sets>
@@ -736,7 +732,7 @@
 			<if advanced="$incombat=yes"><!--checks combat flag to get ready for previous section-->
 				<setvar name="incombat" value="no"/><!--sets engaged flag off-->
 			</if>
-			<equip set="Standard" /><!--equip idle gear-->
+			<equip set="standard" /><!--equip idle gear-->
 			<if p_mpp="<50">
 				<equip>
 					<waist>Fucho-no-obi</waist>
@@ -774,7 +770,7 @@
 			</if>
 		</if>
 		<if p_status="resting"><!--triggers when resting-->
-			<equip set="Resting" />
+			<equip set="resting" />
 		</if>	
 	</idlegear>
 
@@ -809,7 +805,7 @@
 		<if ad_name="Parsimony"><registerbuff id="361" /></if>
 		<if ad_name="Celerity"><registerbuff id="362" /></if>
 		<if ad_name="Alacrity"><registerbuff id="363" /></if>
-		<if ad_name="*Step"><equip set="TH" /></if>
+		<if ad_name="*Step"><equip set="th" /></if>
 		<if ad_name="Benediction"><equip set="benediction" /></if>
 	</jobability>
 
@@ -818,7 +814,7 @@
 		<if ad_name="Cure*|Cura*"><equip set="cureprecast" /></if>
 		<if ad_skill="EnhancingMagic">
 			<if ad_name="Stoneskin">
-				<equip set="Stoneskincast" />
+				<equip set="stoneskincast" />
 			</if>
 			<else>
 			<equip set="enhancingcast" />
@@ -833,7 +829,7 @@
 	<midmagic>
 		<if ad_skill="EnhancingMagic">
 			<equip set="enhancingduration"/>
-			<if ad_name="Stoneskin"><equip set="Stoneskin" /></if>
+			<if ad_name="Stoneskin"><equip set="stoneskin" /></if>
 			<if ad_name="Regen*"><equip set="regen" /></if>
 			<if ad_name="Auspice"><equip set="auspice" /></if>
 			<if ad_name="esuna"><equip set="recast" /></if>
@@ -871,21 +867,21 @@
 				<equip set="auroraholy" />
 			</if>
 			<else>
-				<equip set="Holy" />
+				<equip set="holy" />
 			</else>
 		</if>
 
 		<if ad_name="Poisona|Paralyna|Blindna|Silena|Stona|Viruna"><equip set="statuscure" /></if>
-		<if ad_name="Cursna"><equip set="Cursna" /></if>
-		<if ad_name="Slow"><equip set="Enf" /></if>
-		<if ad_name="Paralyze"><equip set="Enf" /></if>
-		<if ad_name="Addle"><equip set="Enf" /></if>
+		<if ad_name="Cursna"><equip set="cursna" /></if>
+		<if ad_name="Slow"><equip set="enf" /></if>
+		<if ad_name="Paralyze"><equip set="enf" /></if>
+		<if ad_name="Addle"><equip set="enf" /></if>
 		<if ad_name="Sleep*|Repose|Dispel"><equip set="macc" /></if>
 		<if ad_name="Drain*|Aspir*"><equip set="drain" /></if>
-		<if ad_name="Flash"><equip set="Divine" /></if>
-		<if ad_name="Dia*"><equip set="Dia" /></if>
-		<if ad_name="Banish*"><equip set="Banish" /></if>
-		<if ad_name="Bar*"><equip set="Barspells" /></if>
+		<if ad_name="Flash"><equip set="divine" /></if>
+		<if ad_name="Dia*"><equip set="dia" /></if>
+		<if ad_name="Banish*"><equip set="banish" /></if>
+		<if ad_name="Bar*"><equip set="barspells" /></if>
 		<if ad_name="dispelga"><equip set="dispelga" /></if>
 		<if ad_skill="ElementalMagic">
 			<if ad_name="Impact"><equip set="impact" /></if>
@@ -894,14 +890,14 @@
 			</else>
 		</if>
 		<if ad_name="Silence"><equip set="macc" /></if>
-		<if ad_name="Stun"><equip set="Haste" /></if>
+		<if ad_name="Stun"><equip set="haste" /></if>
 	</midmagic>
 	<weaponskill>
 		<if ad_name="Hexa Strike">
 			<equip set="hexa" />
 		</if>
 		<if ad_name="Realmrazer">
-			<equip set="blackhalo" />
+			<equip set="realm" />
 		</if>
 		<if ad_name="Cataclysm|Earth Crusher">
 			<equip set="cata" />
@@ -918,4 +914,3 @@
 	</weaponskill>
 		
 </ashitacast>
-
