@@ -1,0 +1,203 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<head>Mummu Bonnet</head>
+			<neck>Loricate Torque +1</neck>
+			<lear>Phawaylla Earring</lear>
+			<rear>Ethereal Earring</rear>
+			<body>Mummu Jacket</body>
+			<hands>Mummu Wrists</hands>
+			<lring>Defending Ring</lring>
+			<rring>Warp Ring</rring>
+			<back>Iximulew Cape</back>
+			<waist>Acipayam Belt</waist>
+			<legs>Mummu Kecks</legs>
+			<feet>Jute Boots</feet>
+		</set>
+		<set name="TP">
+			<head>Meghanada Visor</head>
+			<neck>Sanctity Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Meghanada Cuirie</body>
+			<hands>Mummu Wrists</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Rajas Ring</rring>
+			<back>Canny Cape</back>
+			<waist>Sailfi Belt</waist>
+			<legs>Meg. Chausses</legs>
+			<feet>Mummu Gamashes</feet>
+		</set>
+		<set name="blank" baseset="TP">
+			<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<lring></lring>
+			<rring></rring>
+			<back></back>
+			<waist></waist>
+			<legs></legs>
+			<feet></feet>
+		</set>
+		<set name="SA" baseset="TP">
+			<head>Herculean Helm</head>
+			<neck>Cuamiz Collar</neck>
+			<lear>Mache Earring</lear>
+			<rear>Brutal Earring</rear>
+			<body>Pillager's Vest +1</body>
+			<waist>Anguinus Belt</waist>
+			<feet>Rawhide Boots</feet>
+		</set>
+		<set name="TA" baseset="SA">
+			<neck>Houyi's Gorget</neck>
+			<lear>Steelflash Earring</rear>
+			<rear>Bladeborn Earring</rear>
+			<hands>Pill. Armlets +1</hands>
+			<rring>Chi'j Band<rring>
+			<feet>Meg. Jambeaux</feet>
+			
+		</set>
+		<set name="Steps">
+			<head>Pillager's Bonnet</head>
+			<neck>Peacock Charm</neck>
+			<lear>Mache Earring</lear>
+			<rear>Moonshade Earring</rear>
+			<body>Espial Gambison</body>
+			<hands>Plun. Armlets +1</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Enlivened Ring</rring>
+			<back>Kayapa Cape</back>
+			<waist>Anguinus Belt</waist>
+			<legs>Kaabnax Trousers</legs>
+			<feet>Raid. Poulaines +2</feet>				
+		</set>
+		<set name="Evisceration">
+			<head>Pillager's Bonnet</head>
+			<neck>Soil Gorget</neck>
+			<lear>Brutal Earring</lear>
+			<rear>Moonshade Earring</rear>
+			<body>Espial Gambison</body>
+			<hands>Pillager's Armlets</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Rajas Ring</rring>
+			<back>Rancorous Mantle</back>
+			<waist>Light Belt</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Quiahuiz Trousers</feet>
+		</set>
+		<set name="Rudra">
+			<head>Pillager's Bonnet</head>
+			<neck>Agasaya's Collar</neck>
+			<lear>Brutal Earring</lear>
+			<rear>Moonshade Earring</rear>
+			<body>Pillager's Vest +1</body>
+			<hands>Pillager's Armlets</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Rajas Ring</rring>
+			<back>Rancorous Mantle</back>
+			<waist>Fotia Belt</waist>
+			<feet>Rawhide Boots</feet>
+		</set>
+		<set name="Mandalic">
+			<head>Pillager's Bonnet</head>
+			<neck>Agasaya's Collar</neck>
+			<lear>Brutal Earring</lear>
+			<rear>Moonshade Earring</rear>
+			<body>Espial Gambison</body>
+			<hands>Pillager's Armlets</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Rajas Ring</rring>
+			<back>Rancorous Mantle</back>
+			<waist>Light Belt</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Quiahuiz Trousers</feet>
+		</set>
+		<set name="Shark">
+			<head>Pillager's Bonnet</head>
+			<neck>Breeze Gorget</neck>
+			<lear>Brutal Earring</lear>
+			<rear>Moonshade Earring</rear>
+			<body>Espial Gambison</body>
+			<hands>Pillager's Armlets</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Rajas Ring</rring>
+			<back>Rancorous Mantle</back>
+			<waist>Thunder Belt</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Quiahuiz Trousers</feet>
+		</set>
+		<set name="DE">
+			<head>Pillager's Bonnet</head>
+			<neck>Soil Gorget</neck>
+			<lear>Brutal Earring</lear>
+			<rear>Moonshade Earring</rear>
+			<body>Espial Gambison</body>
+			<hands>Pillager's Armlets</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Rajas Ring</rring>
+			<back>Rancorous Mantle</back>
+			<waist>Soil Belt</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Quiahuiz Trousers</feet>
+		</set>
+		<set name="Exenterator">
+			<head>Espial Cape</head>
+			<neck>Soil Gorget</neck>
+			<lear>Suppanomimi</lear>
+			<rear>Brutal Earring</rear>
+			<body>Espial Gambison</body>
+			<hands>Pillager's Armlets</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Solemn Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Soil Belt</waist>
+			<legs>Kaabnax Trousers</legs>
+			<feet>Espial Socks</feet>
+		</set>
+	</sets>
+
+	<idlegear>
+		<if p_status="engaged">
+			<if buffactive="65">
+				<equip set="SA" />
+			</if>
+			<if buffactive="87">
+				<equip set="TA" />
+			</if>
+			<elseif> 
+				<equip set="TP" />
+			</elseif>
+		</if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Quickstep|Box Step"><equip set="Steps" /></if>
+		<!--<if spell="Flee"><equip when="precast"><feet>Rogue's Poulaines</feet></equip></if>-->
+		<if ad_name="Assassin's Charge">
+			<equip><feet>Asn. Poulaines +2</feet></equip>
+		</if>
+		<if ad_name="Feint">
+			<equip><legs>Asn. Culottes +2</legs></equip>
+		</if>
+		<if ad_name="Perfect Dodge"><equip><hands>Plunderer's Armlets +1</hands></equip></if>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Exenterator"><equip set="Exenterator" /></if>
+		<if ad_name="Evisceration"><equip set="Evisceration" /></if>
+		<if ad_name="Rudra's Storm"><equip set="Rudra" /></if>		
+		<if ad_name="Mandalic Stab"><equip set="Mandalic" /></if>		
+		<if ad_name="Shark Bite"><equip set="Shark" /></if>	
+		<if ad_name="Dancing Edge"><equip set="DE" /></if>				
+	</weaponskill>
+</ashitacast>

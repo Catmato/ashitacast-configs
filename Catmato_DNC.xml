@@ -1,0 +1,350 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="standard">
+		</set>
+		<set name="movementspeed" baseset="standard"><!--movement speed gear-->
+			<feet>Tandava Crackows</feet>
+		</set>
+
+		<set name="tpacc">
+			<head>Mummu Bonnet +2</head>
+			<body>Malignance Tabard</body>
+			<hands>Meg. Gloves +2</hands>
+			<legs augment="D6232182625036">Carmine Cuisses +1</legs>
+			<feet>Mummu Gamash. +1</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Kentarch Belt +1</waist>
+			<ear1>Mache Earring</ear1>
+			<ear2>Steelflash Earring</ear2>
+			<ring1>Adler Ring</ring1>
+			<ring2>Patricius Ring</ring2>
+			<back>Agema Cape</back>
+		</set>
+		<set name="th">
+			<head augment="S94274868101411615200324">Herculean Helm</head>
+			<legs augment="S942746044828124646">Herculean Trousers</legs>
+		</set>
+
+
+		<set name="krakentp" baseset="tp">
+			<ammo>Wooden Arrow</ammo>
+			<legs>Malignance Tights</legs>
+		</set>
+		<set name="savagebladeenmity" baseset="savageblade">
+			<ammo>Aeolus Arrow</ammo>
+			<head>Orion Beret +1</head>
+		</set>
+		<set name="savageblade">
+			<ammo>Falcon Eye</ammo>
+			<head>Mummu Bonnet +2</head>
+			<body augment="S365904440996091346793540">Herculean Vest</body>
+			<hands>Meg. Gloves +2</hands>
+			<legs>Arc. Braccae +3</legs>
+			<feet augment="S35292304617540">Herculean Boots</feet>
+			<neck>Clotharius Torque</neck>
+			<waist>Kentarch Belt +1</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Sherida Earring</ear2>
+			<ring1>Rufescent Ring</ring1>
+			<ring2>Regal Ring</ring2>
+			<back>Atheling Mantle</back>
+		</set>
+		<set name="evisceration">
+			<ammo>Falcon Eye</ammo>
+			<head>Mummu Bonnet +2</head>
+			<body augment="S365904440996091346793540">Herculean Vest</body>
+			<hands>Mummu wrists +1</hands>
+			<legs augment="S182076079662084240">Samnuha Tights</legs>
+			<feet augment="S35292304617540">Herculean Boots</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Fotia belt</waist>
+			<ear1>Sherida Earring</ear1>
+			<ear2>Odr Earring</ear2>
+			<ring1>Mummu Ring</ring1>
+			<ring2>Regal Ring</ring2>
+			<back>Atheling Mantle</back>
+		</set>
+		<set name="tp">
+			<head>Malignance Chapeau</head>
+			<body>Malignance Tabard</body>
+			<hands>Malignance Gloves</hands>
+			<legs>Malignance tights</legs>
+			<feet>Malignance Boots</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Odr Earring</ear1>
+			<ear2>Digni. Earring</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Chirich Ring +1</ring2>
+			<back>Enuma Mantle</back>
+		</set>
+
+		<set name="magicrangedws">
+			<ammo>Orichalc. Bullet</ammo>
+			<head augment="S94274868101411615200324">Herculean Helm</head>
+			<body augment="S269911938437474242">Samnuha Coat</body>
+			<hands augment="D16183600481984">Pursuer's Cuffs</hands>
+			<legs augment="M9482">Arc. Braccae +3</legs>
+			<feet augment="S35292304617540">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Regal Ring</ring1>
+			<ring2>Ilabrat Ring</ring2>
+			<back augment="S8136641508812818759">Belenus's Cape</back>
+		</set>
+		<set name="magicws">
+			<head augment="S94274868101411615200324">Herculean Helm</head>
+			<body augment="S269911938437474242">Samnuha Coat</body>
+			<hands augment="D16183600481984">Pursuer's Cuffs</hands>
+			<legs augment="M9482">Arc. Braccae +3</legs>
+			<feet augment="S35292304617540">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Friomisi earring</ear2>
+			<ring1>Regal Ring</ring1>
+			<ring2>Ilabrat Ring</ring2>
+			<back augment="S8136641508812818759">Belenus's Cape</back>
+		</set>
+		<set name="fastcast">
+			<head augment="S94274868101411615200324">Herculean Helm</head>
+			<body>Dread Jupon</body>
+			<neck>Voltsurge Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+		</set>
+		<set name="curingwaltz">
+			<head>Mummu Bonnet +2</head>
+			<body>Passion Jacket</body>
+			<hands>Regal Gloves</hands>
+			<feet>Malignance Boots</feet>
+			<ring1 augment="S10294">Dark Ring</ring1>
+			<ring2>Metamorph ring</ring2>
+			<back>Tantalic Cape</back>
+		</set>
+		<set name="rangedtp">
+			<head>Malignance Chapeau</head>
+			<body>Malignance Tabard</body>
+			<hands>Malignance Gloves</hands>
+			<legs>Malignance Tights</legs>
+			<feet>Malignance Boots</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Sherida Earring</ear1>
+			<ear2>Digni. Earring</ear2>
+			<ring1>Ilabrat Ring</ring1>
+			<ring2>Regal Ring</ring2>
+			<back>Quarrel Mantle</back>
+		</set>
+		<set name="prerange">
+			<head>Orion Beret +2</head>
+			<legs augment="M9482">Arc. Braccae +3</legs>
+			<feet>Meg. Jam. +2</feet>
+			<ring1>Crepuscular Ring</ring1>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="autows">off</var><!--is autoWS mode on-->
+		<var name="autosamba">off</var><!--is autoSamba mode on-->
+		<var name="ReadySC">1</var><!--is it ready to accept WS command-->
+		<var name="-enmity">off</var><!--is low enmity mode on-->
+		<var name="wstoauto">Savage Blade</var><!--which WS will automatically be used-->
+		<var name="incombat">no</var><!--are we in combat-->
+	</variables>
+	<inputcommands>
+		<cmd input="/wson"><!--command to turn on autoWS mode-->
+			<setvar name="autows" value="on"/><!--enable the mode-->
+			<setvar name="ReadySC" value="1"/><!--get ready to ws in case we have more then 1000 tp when engaging autows-->
+			<addtochat color="50">======== AutoWS enabled: $wstoauto ========</addtochat><!--print enable message and current autows in chat-->
+		</cmd>
+		<cmd input="/wsoff"><!--command to turn off autoWS mode-->
+			<setvar name="autows" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoWS disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/sambaon"><!--command to turn on autoSamba mode-->
+			<setvar name="autosamba" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== AutoSamba enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/sambaoff"><!--command to turn off autoSamba mode-->
+			<setvar name="autosamba" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoSamba disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/enmityon"><!--command to turn on low enmity mode-->
+			<setvar name="-enmity" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== Low Enmity mode enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/enmityoff"><!--command to turn off low enmity mode-->
+			<setvar name="-enmity" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== Low Enmity mode disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+	</inputcommands>
+	<idlegear>
+		<if p_tp="&lt;1000" advanced="$ReadySC=0"><!--if i have less than 1000 tp, im not in the process of WSing-->
+			<setvar name="ReadySC" value="1"/>
+		</if>
+		<if p_status="engaged"><!--TP rules-->
+			<if advanced="(%eq_main=Kraken Club)|(%eq_sub=Kraken Club)"><!--check if kraken is equipped-->
+				<equip set="krakentp"/><!--equip kraken-specific tp set-->
+			</if>
+			<else>
+				<equip set="tp"/><!--equip regular tp set-->
+			</else>
+			<!--AUTOMATION SECTION-->
+			<if buffactive="!16&!10&!2&!19$!14&!17&!28"><!--check for amnesia(16), stun(10), sleep(2,19), charm(14,17), terror(28) -->
+				<!--AUTO WS SECTION-->
+				<if advanced="($autows=on)&($ReadySC=1)"><!--is it enabled and not in the process of WSing-->
+					<if advanced="(%p_tp>999)&(%t_distance<5)"><!--check for enough tp and distance to mob-->
+							<setvar name="ReadySC" value="0"/><!--in the process of WSing to not spam attempts-->
+							<command>/ws "$wstoauto" &lt;t&gt;</command><!--use ws-->
+							<command delay="1500">/ac var set ReadySC 1</command><!--try again in 1500ms if it didnt fire-->
+					</if>
+				</if>
+				<!--AUTO SAMBA SECTION-->
+				<if advanced="$autosamba=on">
+					<if p_tp=">350&<999"><!--do i have enough tp and not ready to WS-->
+						<if buffactive="!370"><!--check if haste samba isn't up-->
+							<command>/ja "Haste Samba" &lt;me&gt;</command><!--use haste samba-->
+						</if>
+					</if>
+				</if>
+			</if>
+			<!--HAPPENS UPON ENGAGING-->
+			<if advanced="$incombat=no">
+				<setvar name="incombat" value="yes"/><!--engaged flag so stuff only triggers once-->
+				<!--PRINTS AUTOMATION STATUS IN CHAT-->
+				<addtochat color="50">======== Low Enmity mode $-enmity ========</addtochat>
+				<addtochat color="50">======== Auto Samba mode $autosamba ========</addtochat>
+				<if advanced="$autows=on">
+					<addtochat color="50">======== Auto $wstoauto on ========</addtochat>
+				</if>
+				<else>
+					<addtochat color="50">======== AutoWS mode $autows ========</addtochat>
+				</else>
+			</if>
+		</if>
+		<if p_status="idle">
+			<if advanced="$incombat=yes"><!--checks combat flag to get ready for previous section-->
+				<setvar name="incombat" value="no"/><!--sets engaged flag off-->
+			</if>
+			<equip set="Standard" /><!--equip idle gear-->
+			<if p_ismoving="true"><!--check if moving-->
+				<equip set="movementspeed"/>
+			</if>
+		</if>
+	</idlegear>
+	<preranged>
+		<equip set="prerange"/>
+		<if advanced="%eq_range=Holliday">
+			<equip>
+				<ammo>Decimating Bullet</ammo>
+			</equip>
+		</if>
+
+		<if advanced="%eq_ammo=Hauksbok Arrow">
+			<addtochat color="50">======== YOU ALMOST FIRED YOUR ARROW DUMBASS ========</addtochat>
+			<cancel />
+		</if>
+		<if advanced="%eq_range!=Holliday">
+			<equip>
+				<ammo>Eminent Arrow</ammo>
+			</equip>
+		</if>
+	</preranged>
+	<midranged>
+		<if advanced="%eq_ammo=Hauksbok Arrow">
+			<addtochat color="50">======== YOU ALMOST FIRED YOUR ARROW DUMBASS ========</addtochat>
+			<cancel />
+		</if>
+		<equip set="rangedtp"/>
+		<if advanced="%eq_range=Holliday">
+			<equip>
+				<ammo>Decimating Bullet</ammo>
+			</equip>
+		</if>
+		<if advanced="%eq_range=!Holliday">
+			<equip>
+				<ammo>Eminent Arrow</ammo>
+			</equip>
+		</if>
+
+	</midranged>
+	<premagic>
+		<equip set="fastcast"/>
+	</premagic>
+	<midmagic>
+		<equip set="fastcast"/>
+	</midmagic>
+	<jobability>
+		<if ad_name="Animated Flourish|*step">
+			<equip set="th"/>
+		</if>
+		<if ad_name="Curing Waltz*|Divine Waltz">
+			<equip set="curingwaltz"/>
+		</if>
+		<if ad_name="Bounty Shot">
+			<equip set="th"/>
+			<equip>
+				<ammo>Wooden Arrow</ammo>
+			</equip>
+			<if advanced="%eq_ammo=Hauksbok Arrow">
+				<addtochat color="50">======== YOU ALMOST FIRED YOUR ARROW DUMBASS ========</addtochat>
+				<cancel />
+			</if>
+		</if>
+		<if ad_name="Eagle Eye Shot">
+			<if advanced="%eq_ammo=Hauksbok Arrow">
+				<addtochat color="50">======== YOU ALMOST FIRED YOUR ARROW DUMBASS ========</addtochat>
+				<cancel />
+			</if>
+			<equip set="th"/>
+			<equip>
+				<ammo>Wooden Arrow</ammo>
+			</equip>
+		</if>
+			<if ad_name="Scavenge">
+			<equip>
+				<feet>Hunter's socks</feet>
+			</equip>
+		</if>
+	</jobability>
+	<weaponskill>
+		<if ad_name="wildfire|trueflight">
+			<equip set="magicrangedws"/>
+		</if>
+		<if ad_name="aeolian edge">
+			<equip set="magicws"/>
+		</if>
+		<if ad_name="Savage Blade|Circle Blade|Pyrrhic Kleos|Rudra's Storm">
+			<if advanced="$-enmity=on">
+				<equip set="savagebladeenmity"/>
+			</if>
+			<else>
+				<equip set="savageblade"/>
+			</else>
+		</if>
+		<if ad_name="Evisceration">
+			<equip set="evisceration"/>
+		</if>
+
+		<if ad_name="*Arrow|Sidewinder|Jishnu's Radiance">
+			<equip>
+				<ammo>Wooden Arrow</ammo>
+			</equip>
+			<equip set="rangetp"/>
+			<if advanced="%eq_ammo=Hauksbok Arrow">
+				<addtochat color="50">======== YOU ALMOST FIRED YOUR ARROW DUMBASS ========</addtochat>
+				<cancel />
+			</if>
+		</if>
+	</weaponskill>
+</ashitacast>

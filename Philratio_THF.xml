@@ -1,0 +1,47 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="tp">
+			<main>Adder Jambiya</main>
+			<sub>Kraken Club</sub>
+			<range>Ungur Boomerang</range>
+			<head>Empress Hairpin</head>
+			<body>Assault Jerkin</body>
+			<hands>Noct Gloves</hands>
+			<legs>Noct Brais</legs>
+			<feet>Trotter Boots</feet>
+			<neck>Peacock Charm</neck>
+			<waist>Virtuoso Belt</waist>
+			<ear1>Gold Earring</ear1>
+			<ear2>Megasco Earring</ear2>
+			<ring1>Lava's Ring</ring1>
+			<ring2>Kusha's Ring</ring2>
+			<back>Amemet Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

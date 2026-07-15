@@ -1,0 +1,622 @@
+<ashitacast>
+    <settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+        <buffupdate>false</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+        <statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+        <hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+        <autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+    </settings>
+    <sets>
+		<set name="Idle">
+			<ammo>Staunch Tathlum</ammo>
+			<head augment="S97050003835024">Valorous Mask</head>
+			<body>Tartarus Platemail</body>
+			<hands>Sulev. Gauntlets +2</hands>
+			<legs>Sulev. Cuisses +2</legs>
+			<feet>Sulev. Leggings +2</feet>
+			<neck>Bathy Choker</neck>
+			<waist>Flume Belt</waist>
+			<ear1>Infused Earring</ear1>
+			<ear2>Dawn Earring</ear2>
+			<ring1>Karieyh Ring</ring1>
+			<ring2>Sheltered Ring</ring2>
+			<back>Moonbeam Cape</back>
+		</set>
+		<set name="TP">
+			<ammo>Aurgelmir Orb</ammo>
+			<head>Flam. Zucchetto +2</head>
+			<body>Flamma Korazin +2</body>
+			<hands>Flam. Manopolas +2</hands>
+			<legs augment="S1100411826792722553">Odyssean Cuisses</legs>
+			<feet>Flam. Gambieras +2</feet>
+			<neck augment="O2937825787904199">War. Beads +1</neck>
+			<waist>Ioskeha Belt</waist>
+			<ear1>Dedition Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Petrov Ring</ring1>
+			<ring2>Chirich Ring +1</ring2>
+			<back>Buquwik Cape</back>
+			<!-- <back augment="S2651484650913033">Mecisto. Mantle</back> -->
+		</set>
+		<set name="ws">
+			<ammo>Knobkierrie</ammo>
+			<head>Sulevia's Mask +1</head>
+			<body>Argosy Hauberk +1</body>
+			<hands>Sulev. Gauntlets +2</hands>
+			<legs>Flamma Dirs +2</legs>
+			<feet>Sulev. Leggings +2</feet>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Ishvara Earring</ear1>
+			<ear2 augment="S560011287">Moonshade Earring</ear2>
+			<ring1>Karieyh Ring</ring1>
+			<ring2>Apate Ring</ring2>
+			<back>Buquwik Cape</back>
+		</set>
+		<!-- <set name="gaxe"> -->
+			<!-- <main augment="S14083751451662312333">Aganoshe</main> -->
+			<!-- <sub>Dilet.'s Grip +1</sub> -->
+		<!-- </set> -->
+        <!-- <set name="sword"> -->
+			<!-- <main>Kaja Sword</main> -->
+			<!-- <sub>Demers. Degen +1</sub> -->
+		<!-- </set>		 -->
+		<!-- <set name="gsword"> -->
+			<!-- <main>Ragnarok</main> -->
+			<!-- <sub>Dilet.'s Grip +1</sub> -->
+		<!-- </set> -->
+		<!-- <set name="pole"> -->
+			<!-- <main>Quint Spear</main> -->
+			<!-- <sub>Dilet.'s Grip +1</sub> -->
+		<!-- </set> -->
+		<!-- <set name="staff"> -->
+			<!-- <main>Voay staff</main> -->
+			<!-- <sub>Dilet.'s Grip +1</sub> -->
+		<!-- </set> -->
+		<!-- <set name="dagger"> -->
+			<!-- <main>Odium</main> -->
+			<!-- <sub>Twilight Knife</sub> -->
+		<!-- </set> -->
+		<!-- <set name="club"> -->
+			<!-- <main>Divinity</main> -->
+			<!-- <sub>Mafic Cudgel</sub> -->
+		<!-- </set> -->
+		<!-- <set name="axe"> -->
+			<!-- <main>Barbarity</main> -->
+			<!-- <sub>Tramontane Axe</sub> -->
+		<!-- </set> -->
+		<!-- <set name="h2h"> -->
+			<!-- <main>Eyra Baghnakhs</main> -->
+			<!-- <sub></sub> -->
+		<!-- </set> -->
+		<!-- <set name="scythe"> -->
+			<!-- <main>Blurred Scythe</main> -->
+			<!-- <sub>Dilet.'s Grip +1</sub> -->
+		<!-- </set> -->
+		<set name="gaxe">
+			<main augment="S14083751451662312333">Aganoshe</main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+        <set name="sword">
+			<main>Excalipoor</main>
+			<sub>Adapa Shield</sub>
+		</set>		
+		<set name="gsword">
+			<main>Barbarian's Sword</main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="pole">
+			<main>Quint Spear</main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="staff">
+			<main>Chatoyant Staff</main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="pdag">
+			<main>Wind Knife</main>
+			<sub>Adapa Shield</sub>
+		</set>
+		<set name="dagger">
+			<main>Odium</main>
+			<sub>Adapa Shield</sub>
+		</set>
+		<set name="club">
+			<main>Nmd. Moogle Rod</main>
+			<sub>Adapa Shield</sub>
+		</set>
+		<set name="axe">
+			<main>Barbarity</main>
+			<sub>Adapa Shield</sub>
+		</set>
+		<set name="h2h">
+			<main>Eyra Baghnakhs</main>
+			<sub></sub>
+		</set>
+		<set name="scythe">
+			<main>Ark Scythe</main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="rag">
+			<main>Ragnarok</main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="Ranged">
+			<range>Ullr</range>
+			<ammo>Antlion Arrow</ammon>
+		</set>
+		<set name="Aeolian">
+			<ammo>Ghastly Tathlum</ammo>
+			<head augment="S7256792312834729">Herculean Helm</head>
+			<body augment="S1979136499714720509">Herculean Vest</body>
+			<hands augment="S7046823307706316409">Herculean Gloves</hands>
+			<legs augment="S1917275589869520548">Herculean Trousers</legs>
+			<feet>Turms Leggings</feet>
+			<neck>Deviant Necklace</neck>
+			<waist>Orpheus's Sash</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Dingir Ring</ring1>
+			<ring2>Karieyh Ring</ring2>
+			<back augment="S8137071005542518759">Toutatis's Cape</back>
+		</set>
+    </sets>
+	<inputcommands>	
+		<cmd input="/dt">
+		     <setvar name="dmg" value="1"/>
+			 <addtochat color="50">DT IS ACTIVE</addtochat>
+		</cmd>
+        <cmd input="/dtoff">
+             <setvar name="dmg" value="0"/>
+             <addtochat color="50">DT IS OFF</addtochat>
+        </cmd>	
+		<cmd input="/aeo">
+		     <setvar name="autoaeo" value="1"/>
+		     <addtochat color="50">Auto Aeolian GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/aeoff">
+		     <setvar name="autoaeo" value="0"/>
+		     <addtochat color="50">Auto Aeolian OFF</addtochat>
+        </cmd>		
+		<cmd input="/gaxe">
+		     <setvar name="gaxe" value="1"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Great Axe Equipped</addtochat>
+        </cmd>
+		<cmd input="/ragon">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="1"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Ragnarok Equipped</addtochat>
+        </cmd>
+		<cmd input="/ragoff">
+		     <setvar name="rag" value="0"/>
+		     <addtochat color="50">Ragnarok OFF</addtochat>
+        </cmd>
+		<cmd input="/staff">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="staff" value="1"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Staff Equipped</addtochat>
+        </cmd>
+		<cmd input="/staffoff">
+		     <setvar name="staff" value="0"/>
+		     <addtochat color="50">Staff OFF</addtochat>
+        </cmd>
+	    <cmd input="/sword">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="1"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Swords Equipped</addtochat>
+        </cmd>
+	    <cmd input="/swordoff">
+		     <setvar name="sword" value="0"/>
+		     <addtochat color="50">Swords OFF</addtochat>
+        </cmd>
+		<cmd input="/gsword">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="1"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Gsword Equipped</addtochat>
+        </cmd>
+	    <cmd input="/gswordoff">
+		     <setvar name="gsword" value="0"/>
+		     <addtochat color="50">GSword OFF</addtochat>
+        </cmd>
+		<cmd input="/pdag">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="pdag" value="1"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="dagger" value="0"/>
+		     <addtochat color="50">Proc Dagger Equipped</addtochat>
+        </cmd>
+	    <cmd input="/pdagoff">
+		     <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Proc Dagger OFF</addtochat>
+        </cmd>
+		<cmd input="/club">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="1"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Clubs Equipped</addtochat>
+        </cmd>
+	    <cmd input="/cluboff">
+		     <setvar name="club" value="0"/>
+		     <addtochat color="50">Club OFF</addtochat>
+        </cmd>
+		<cmd input="/pole">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="1"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Polearm Equipped</addtochat>
+        </cmd>
+	    <cmd input="/poleoff">
+		     <setvar name="pole" value="0"/>
+		     <addtochat color="50">Polearm OFF</addtochat>
+        </cmd>
+		<cmd input="/punch">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="1"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">H2H Equipped</addtochat>
+        </cmd>
+	    <cmd input="/punchoff">
+		     <setvar name="punch" value="0"/>
+		     <addtochat color="50">H2H OFF</addtochat>
+        </cmd>
+		<cmd input="/axe">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="1"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Axes Equipped</addtochat>
+        </cmd>
+		<cmd input="/scythe">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="1"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">Scythe Equipped</addtochat>
+        </cmd>
+	    <cmd input="/scytheoff">
+		     <setvar name="scythe" value="0"/>
+		     <addtochat color="50">Scythe OFF</addtochat>
+        </cmd>
+		<cmd input="/dag">
+		     <setvar name="gaxe" value="0"/>
+			 <setvar name="axe" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="punch" value="0"/>
+			 <setvar name="dagger" value="1"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="rag" value="0"/>
+			 <setvar name="pdag" value="0"/>
+		     <addtochat color="50">DMG Daggers Equipped</addtochat>
+        </cmd>
+	    <cmd input="/dagoff">
+		     <setvar name="dagger" value="0"/>
+		     <addtochat color="50">DMG Daggers OFF</addtochat>
+        </cmd>
+		<cmd input="/up">
+		     <setvar name="autoup" value="1"/>
+		     <addtochat color="50">Upheaval GOOOO!!!</addtochat>
+        </cmd>
+			 <cmd input="/upoff">
+		     <setvar name="autoup" value="0"/>
+		     <addtochat color="50">Upheaval OFF</addtochat>
+        </cmd>
+		<cmd input="/sbon">
+		     <setvar name="autosb" value="1"/>
+		     <addtochat color="50">Auto Savage Blade GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/sboff">
+		     <setvar name="autosb" value="0"/>
+		     <addtochat color="50">Auto Savage Blade OFF</addtochat>
+        </cmd>
+		<cmd input="/gsws">
+		     <setvar name="autogsws" value="1"/>
+		     <addtochat color="50">Auto GS WS GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/gswsoff">
+		     <setvar name="autogsws" value="0"/>
+		     <addtochat color="50">Auto GS WS OFF</addtochat>
+        </cmd>
+		<cmd input="/solo">
+			<setvar name="solosc" value="1"/>
+			<setvar name="ReadySC" value="1"/>
+			<setvar name="stop" value="1"/>
+			<setvar name="backup" value="1"/>
+			<addtochat	color="50">Solo SC On</addtochat>
+		</cmd>
+		<cmd input="/soloff">
+			<setvar name="solosc" value="0"/>
+			<setvar name="stop" value="0"/>
+			<setvar name="backup" value="0"/>
+			<addtochat color="50">Solo SC OFF</addtochat>
+		</cmd>
+		<cmd input="/raon">
+		     <setvar name="ranged" value="1"/>
+		     <addtochat color="50">Ranged Equipped!!!</addtochat>
+        </cmd>
+		<cmd input="/raoff">
+		     <setvar name="ranged" value="0"/>
+		     <addtochat color="50">Ranged OFF</addtochat>
+        </cmd>
+    </inputcommands>
+	<jobability>
+	</jobability>
+	<weaponskill>
+        <equip set="WS" />
+    </weaponskill>
+    <idlegear>
+        <if p_status="idle">
+            <equip set="Idle" />
+        </if>
+        <if p_status="engaged">
+            <equip set="TP" />
+        </if>
+        <if p_status="resting">
+            <equip set="Resting" />
+        </if>
+		<if advanced="$dmg=1">
+		    <equip set="dt" />
+		</if>
+		<if advanced="$gaxe=1">
+		    <equip set="gaxe" />
+		</if>
+		<if advanced="$dagger=1">
+		    <equip set="dagger" />
+		</if>
+		<if advanced="$pdag=1">
+		    <equip set="pdag" />
+		</if>
+		<if advanced="$axe=1">
+		    <equip set="axe" />
+		</if>
+		<if advanced="$rag=1">
+		    <equip set="rag" />
+		</if>			
+		<if advanced="$pole=1">
+		    <equip set="pole" />
+		</if>	
+		<if advanced="$punch=1">
+		    <equip set="h2h" />
+		</if>				
+		<if advanced="$club=1">
+		    <equip set="club" />
+		</if>
+		<if advanced="$sword=1">
+		    <equip set="sword" />
+		</if>
+		<if advanced="$gsword=1">
+		    <equip set="gsword" />
+		</if>
+		<if advanced="$staff=1">
+		    <equip set="staff" />
+		</if>
+		<if advanced="$scythe=1">
+		    <equip set="scythe" />
+		</if>
+		<if advanced="$ranged=1">
+		    <equip set="ranged" />
+		</if>
+		<if advanced="$autoaeo=1">
+		   <if p_tp=">999">
+		   <if p_status="Engaged">
+		      <equip set="Aeolian" />  
+		      <command>/ws "Aeolian Edge" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if>
+		<if advanced="$autoup=1">
+		   <if p_tp=">999">
+		   <if p_status="Engaged">
+		      <equip set="Upheaval" />  
+		      <command>/ws "Upheaval" &lt;t&gt;</command>
+		   </if>
+	    </if>
+		</if>		
+			<!--<elseif  p_status="Idle">
+					<setvar name="solosc" value="1"/>	
+				</elseif>-->
+		<if advanced="$autosb=1">
+		   <if p_tp=">999">
+		   <if p_status="Engaged">
+		      <equip set="Savage" />  
+		      <command>/ws "Savage Blade" &lt;t&gt;</command>
+		   </if>
+		   </if>
+	    </if>
+		
+<!-- Solo Skill Chain Shit -->
+
+<!--<if p_tp=">999" p_status="Engaged" advanced="$ReadySC=1" advanced="$stop=1">
+		<command>/ac print uvars</command>
+			<if advanced="$solosc=1">
+					<setvar name="ReadySC" value="0"/>
+					<command>/ws "Resolution" &lt;t&gt;</command>
+					<setvar name="solosc" value="2"/>
+			</if>
+			<elseif advanced="$solosc=2">
+					<setvar name="ReadySC" value="0"/>
+					<command>/ws "Scourge" &lt;t&gt;</command>
+					<setvar name="solosc" value="3"/>
+			</elseif>
+			<elseif advanced="$solosc=3">
+					<setvar name="ReadySC" value="0"/>
+					<command>/ws "Scourge" &lt;t&gt;</command>
+					<setvar name="solosc" value="1"/>
+			</elseif>
+		</if>
+		<if p_tp="<1000">
+			<setvar name="ReadySC" value="1"/>
+		</if>
+		<if p_status="Idle">
+			<setvar name="ReadySC" value="1"/>
+			<setvar name="solosc" value="1"/>
+		</if>
+-->
+		<if p_tp=">999" p_status="Engaged" advanced="$ReadySC=1" advanced="$stop=1">
+		<!-- <command>/ac print uvars</command> -->
+			<if advanced="$solosc=1">
+					<setvar name="ReadySC" value="0"/>
+					<command>/ws "Resolution" &lt;t&gt;</command>
+					<setvar name="solosc" value="2"/>
+			</if>
+			<elseif advanced="$solosc=2">
+					<setvar name="ReadySC" value="0"/>
+					<command>/ws "Scourge" &lt;t&gt;</command>
+					<setvar name="solosc" value="3"/>
+			</elseif>
+			<elseif advanced="$solosc=3">
+					<setvar name="ReadySC" value="0"/>
+					<command>/ws "Scourge" &lt;t&gt;</command>
+					<setvar name="solosc" value="1"/>
+			</elseif>
+		</if>
+		<if p_tp="<1000">
+			<setvar name="ReadySC" value="1"/>
+		</if>
+		<if p_status="Idle">
+			<setvar name="ReadySC" value="1"/>
+			<setvar name="solosc" value="1"/>
+		</if>
+		<if p_tp=">1999" p_status="Engaged" advanced="$backup=1">
+			<setvar name="solosc" value="2"/>
+			<command>/ws "Resolution" &lt;t&gt;</command>
+			<command>/echo BACKUP USED</command>
+		</if>	
+			
+						
+		
+		
+		<!-- <if advanced="$autogsws=1"> -->
+		    <!-- <if buffactive="Aftermath"> -->
+			<!-- <if p_status="Engaged"> -->
+		        <!-- <if p_tp=">999"> -->
+		          <!-- <command>/ws "Scourge" &lt;t&gt;</command> -->
+		        <!-- </if> -->
+		   <!-- </if> -->
+		   <!-- </if> -->
+		    <!-- <else> -->
+			<!-- <if p_status="Engaged"> -->
+		       <!-- <if p_tp=">2999"> -->
+		          <!-- <command>/ws "Scourge" &lt;t&gt;</command> -->
+			   <!-- </if> -->
+			<!-- </if>    -->
+		    <!-- </else> -->
+		<!-- </if>		 -->
+
+		<if p_ismoving="true"><equip set="Moving" /></if>	  
+	    <if eq_back ="Mecisto. Mantle"><equip lock="true"><back augment="S2651484650913033">Mecisto. Mantle</back></equip></if>	
+		<if eq_rring="Warp Ring"><equip lock="true"><rring>Warp Ring</rring></equip></if>
+		<if eq_rring="Dim. Ring (Holla)"><equip lock="true"><rring>Dim. Ring (Holla)</rring></equip></if>
+		<if eq_rring="Dim. Ring (Dem)"><equip lock="true"><rring>Dim. Ring (Dem)</rring></equip></if>
+		<if eq_rring="Dim. Ring (Mea)"><equip lock="true"><rring>Dim. Ring (Mea)</rring></equip></if>
+		<if eq_rring="Echad Ring"><equip lock="true"><rring>Echad Ring</rring></equip></if>
+		<if eq_rring="Capacity Ring"><equip lock="true"><rring>Capacity Ring</rring></equip></if>
+		<if eq_rring="Trizek Ring"><equip lock="true"><rring>Trizek Ring</rring></equip></if>
+		<if eq_rring="Facility Ring"><equip lock="true"><rring>Facility Ring</rring></equip></if>
+    </idlegear>
+
+</ashitacast>

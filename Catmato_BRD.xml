@@ -1,0 +1,152 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="tp">
+			<main>Naegling</main>
+			<sub>Tauret</sub>
+			<ammo>Amar Cluster</ammo>
+			<head>Aya. Zucchetto +2</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands>Aya. Manopolas +2</hands>
+			<legs>Aya. Cosciales +2</legs>
+			<feet>Aya. Gambieras +2</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Reiki Yotai</waist>
+			<ear1>Suppanomimi</ear1>
+			<ear2>Digni. Earring</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Chirich Ring +1</ring2>
+			<back>Enuma Mantle</back>
+		</set>
+		<set name="savage">
+			<main>Naegling</main>
+			<sub>Tauret</sub>
+			<ammo>Focal Orb</ammo>
+			<head>Aya. Zucchetto +2</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands>Aya. Manopolas +2</hands>
+			<legs>Aya. Cosciales +2</legs>
+			<feet>Aya. Gambieras +2</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Kentarch Belt +1</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Shukuyu Ring</ring1>
+			<ring2>Rufescent Ring</ring2>
+			<back>Atheling Mantle</back>
+		</set>
+		<set name="song">
+			<range augment="D2937910205698">Terpander</range>
+			<hands>Inyan. Dastanas +2</hands>
+			<legs>Inyanga Shalwar</legs>
+			<neck>Incanter's Torque</neck>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<back>Rhapsode's Cape</back>
+		</set>
+		<set name="fastcast">
+			<head>Welkin Crown</head>
+			<body>Inyanga Jubbah +1</body>
+			<legs>Aya. Cosciales +2</legs>
+			<feet augment="S66932907180032">Telchine Pigaches</feet>
+			<neck>Voltsurge Torque</neck>
+			<waist>Embla Sash</waist>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+			<ring2>Kishar Ring</ring2>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="Set">Old</var>
+		<var name="TH">TH</var>
+		<var name="autows">off</var>
+		<var name="autosamba">off</var>
+		<var name="ReadySC">0</var>
+		<var name="-enmity">off</var>
+		<var name="wstoauto">Savage Blade</var>
+		<var name="incombat">no</var>
+	</variables>
+
+	<inputcommands>
+		<cmd input="/wson">
+			<setvar name="autows" value="on"/>
+			<addtochat color="50">======== AutoWS enabled: $wstoauto ========</addtochat>
+		</cmd>
+		<cmd input="/wsoff">
+			<setvar name="autows" value="off"/>
+			<addtochat color="50">======== AutoWS disabled ========</addtochat>
+		</cmd>
+		<cmd input="/sambaon">
+			<setvar name="autosamba" value="on"/>
+			<addtochat color="50">======== AutoSamba enabled ========</addtochat>
+		</cmd>
+		<cmd input="/sambaoff">
+			<setvar name="autosamba" value="off"/>
+			<addtochat color="50">======== AutoSamba disabled ========</addtochat>
+		</cmd>
+		<cmd input="/enmityon">
+			<setvar name="-enmity" value="on"/>
+			<addtochat color="50">======== Low Enmity mode enabled ========</addtochat>
+		</cmd>
+		<cmd input="/enmityoff">
+			<setvar name="-enmity" value="off"/>
+			<addtochat color="50">======== Low Enmity mode disabled ========</addtochat>
+		</cmd>
+	</inputcommands>
+	<idlegear>
+		<if p_tp="<1000" advanced="$ReadySC=0">
+			<setvar name="ReadySC" value="1"/>
+		</if>
+		<if p_status="engaged">
+			<equip set="tp"/>
+				<if buffactive="!16">
+					<if advanced="$autows=on" advanced="$ReadySC=1">
+						<if advanced="(%p_tp>999)&(%t_distance<5)">
+								<setvar name="ReadySC" value="0"/>
+								<command>/ws "$wstoauto" &lt;t&gt;</command>
+								<command delay="1500">/ac var set ReadySC 1</command>
+							</if>
+					</if>
+					<if advanced="$autosamba=on">
+						<if p_tp=">350&<999">
+							<if buffactive="!370">
+								<command>/ja "Haste Samba" &lt;me&gt;</command>
+							</if>
+						</if>
+					</if>
+				</if>
+				<if buffactive="65">
+					<equip set="sneakattack"/>
+				</if>
+		</if>
+		<else>
+			<equip set="Standard" />
+		</else>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<equip set="fastcast"/>
+	</premagic>
+	<midmagic>
+		<if ad_type="bardsong">
+			<equip set="song"/>
+		</if>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<if ad_name="Savage Blade|Evisceration">
+			<equip set="savage"/>
+		</if>
+	</weaponskill>
+</ashitacast>

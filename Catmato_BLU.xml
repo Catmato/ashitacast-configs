@@ -1,0 +1,363 @@
+<?xml version="1.0" ?>
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets> 
+		<set name="Stoneskin" BaseSet="enhancing">
+			<waist>Siegel Sash</waist>
+		</set>
+		<set name="Curing">
+			<ammo>Incantor Stone</ammo>
+			<head>Vanya Hood</head>
+			<neck>Ajari Necklace</neck>
+			<lear>Gifted Earring</lear>
+			<rear>Orison Earring</rear>
+			<body>Ebers Bliaud +1</body>
+			<hands>Inyan. Dastanas +2</hands>
+			<lring>Janniston Ring</lring>
+			<rring>Sirona's Ring</rring>
+			<back>Alaunus's Cape</back>
+			<waist>Ninurta's Sash</waist>
+			<legs>Ebers Pant. +1</legs>
+			<feet>Vanya Clogs</feet>
+		</set>
+		<set name="impactpre">
+			<head></head>
+			<body>Twilight Cloak</body>
+		</set>
+		<set name="impact">
+			<head></head>
+			<lear>Hecate's Earring</lear>
+			<rear>Moldavite Earring</rear>
+			<body>Twilight Cloak</body>
+			<hands>Inyan. Dastanas +2</hands>
+			<lring>Balrahn's ring</lring>
+			<rring>Spiral Ring</rring>
+			<back>Toro cape</back>
+			<waist>Goading Belt</waist>
+			<legs>Chironic Hose</legs>
+			<feet>Manabyss Pigaches</feet>
+		</set>
+		<set name="TH">
+			<waist>Tarutaru Sash</waist>
+		</set>
+		<set name="cureme" baseset="curing">
+			<waist>Gishdubar Sash</waist>
+		</set>
+		<set name="cursna" baseset="haste">
+			<hands>Fanatic Gloves</hands>
+			<back>Alaunus's Cape</back>
+			<feet>Gende. Galosh. +1</feet>
+		</set>
+		<set name="enhancingcast" BaseSet="Fast Cast">
+			<waist>Siegel Sash</waist>
+		</set>	
+
+		<set name="dispelga" baseset="enf">
+			<main>Daybreak</main>
+		</set>
+		<set name="diffusion" baseset="haste">
+			<feet>Luhlaza Charuqs</feet>
+		</set>
+		<set name="tp">
+			<ammo>Ginsen</ammo>
+			<head>Malignance Chapeau</head>
+			<body>Malignance Tabard</body>
+			<hands>Malignance Gloves</hands>
+			<legs>Carmine Cuisses +1</legs>
+			<feet>Malignance Boots</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Sailfi Belt +1</waist>
+			<ear1>Digni. Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Chirich Ring +1</ring2>
+			<back>Enuma Mantle</back>
+		</set>
+		<set name="savageblade">
+			<ammo>Amar Cluster</ammo>
+			<head augment="S6377209853135124601">Herculean Helm</head>
+			<body augment="S365904440996091346793540">Herculean Vest</body>
+			<hands>Malignance Gloves</hands>
+			<legs augment="S182076079662084240">Samnuha Tights</legs>
+			<feet augment="S35292304617540">Herculean Boots</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Sailfi Belt +1</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Shukuyu Ring</ring1>
+			<ring2>Epona's Ring</ring2>
+			<back>Atheling Mantle</back>
+		</set>
+		<set name="standard">
+			<main>Naegling</main>
+			<sub>Genmei Shield</sub>
+			<ammo>Staunch Tathlum</ammo>
+			<head>Malignance Chapeau</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Malignance Gloves</hands>
+			<legs augment="D6232182625036">Carmine Cuisses +1</legs>
+			<feet>Malignance Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Luminary Sash</waist>
+			<ear1>Ethereal Earring</ear1>
+			<ear2>Infused Earring</ear2>
+			<ring1 augment="S10294">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="nuke">
+			<main>Maxentius</main>
+			<sub augment="D15479225921796">Nibiru Cudgel</sub>
+			<ammo>Hydrocera</ammo>
+			<head augment="S94274868101411615200324">Herculean Helm</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="D15479298603780">Amalric Gages</hands>
+			<legs augment="D15479298603780">Amalric Slops</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Vertigo Ring</ring2>
+			<back>Seshaw Cape</back>
+		</set>
+		<set name="darknuke" baseset="nuke">
+			<head>Pixie Hairpin +1</head>
+		</set>
+		<set name="cata" baseset="darknuke">
+			<main></main>
+			<sub></sub>
+			<ear2>Moonshade earring</ear2>
+		</set>
+		<set name="fastcast">
+			<main>Colada</main>
+			<head augment="S94274868101411615200324">Herculean Helm</head>
+			<body>Dread Jupon</body>
+			<legs>Aya. Cosciales +2</legs>
+			<neck>Voltsurge Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+			<ring2>Kishar Ring</ring2>
+			<back>Perimede Cape</back>
+		</set>
+		<set name="enhancing">
+			<ammo>Staunch Tathlum</ammo>
+			<head augment="S75728866574336">Telchine Cap</head>
+			<body augment="S75729275215895">Telchine Chas.</body>
+			<hands augment="S84525093814272">Telchine Gloves</hands>
+			<legs augment="S75729000792064">Telchine Braconi</legs>
+			<feet augment="S66932907180032">Telchine Pigaches</feet>
+			<neck>Incanter's Torque</neck>
+			<waist>Cascade Belt</waist>
+			<ear1>Mimir Earring</ear1>
+			<ear2>Gifted Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<back>Fi Follet Cape</back>
+		</set>
+		<set name="macc">
+			<main>Maxentius</main>
+			<sub augment="D15479225921796">Nibiru Cudgel</sub>
+			<ammo>Hydrocera</ammo>
+			<head>Malignance Chapeau</head>
+			<body>Malignance Tabard</body>
+			<hands>Regal Cuffs</hands>
+			<legs>Malignance Tights</legs>
+			<feet>Malignance Boots</feet>
+			<neck>Erra Pendant</neck>
+			<waist>Luminary Sash</waist>
+			<ear1>Njordr Earring</ear1>
+			<ear2>Digni. Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Metamorph Ring</ring2>
+			<back>Aurist's Cape +1</back>
+		</set>
+		<set name="drain" baseset="macc">
+		</set>
+		<set name="movementspeed">
+			<legs augment="D6232182625036">Carmine Cuisses +1</legs>
+		</set>
+		<set name="bluskill">
+			<main augment="D15479298592506">Iris</main>
+			<feet augment="M1421">Luhlaza Charuqs</feet>
+			<neck>Incanter's Torque</neck>
+			<ear1>Njordr Earring</ear1>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+		</set>
+	</sets>
+	<variables>
+		<var name="autows">off</var><!--is autoWS mode on-->
+		<var name="autosamba">off</var><!--is autoSamba mode on-->
+		<var name="ReadySC">1</var><!--is it ready to accept WS command-->
+		<var name="-enmity">off</var><!--is low enmity mode on-->
+		<var name="wstoauto">Savage Blade</var><!--which WS will automatically be used-->
+		<var name="incombat">no</var><!--are we in combat-->
+	</variables>
+	<inputcommands>
+		<cmd input="/wson"><!--command to turn on autoWS mode-->
+			<setvar name="autows" value="on"/><!--enable the mode-->
+			<setvar name="ReadySC" value="1"/><!--get ready to ws in case we have more then 1000 tp when engaging autows-->
+			<addtochat color="50">======== AutoWS enabled: $wstoauto ========</addtochat><!--print enable message and current autows in chat-->
+		</cmd>
+		<cmd input="/wsoff"><!--command to turn off autoWS mode-->
+			<setvar name="autows" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoWS disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/sambaon"><!--command to turn on autoSamba mode-->
+			<setvar name="autosamba" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== AutoSamba enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/sambaoff"><!--command to turn off autoSamba mode-->
+			<setvar name="autosamba" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoSamba disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/enmityon"><!--command to turn on low enmity mode-->
+			<setvar name="-enmity" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== Low Enmity mode enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/enmityoff"><!--command to turn off low enmity mode-->
+			<setvar name="-enmity" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== Low Enmity mode disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+	</inputcommands>
+	<idlegear>
+		<if p_tp="&lt;1000" advanced="$ReadySC=0"><!--if i have less than 1000 tp, im not in the process of WSing-->
+			<setvar name="ReadySC" value="1"/><!--set the ws ready value-->
+		</if>
+		<if p_status="engaged"><!--TP rules-->
+			<if advanced="(%eq_main=Kraken Club)|(%eq_sub=Kraken Club)"><!--check if kraken is equipped-->
+				<equip set="krakentp"/><!--equip kraken-specific tp set-->
+			</if>
+			<else>
+				<equip set="tp"/><!--equip regular tp set-->
+			</else>
+			<!--AUTOMATION SECTION-->
+			<if buffactive="!16&!10&!2&!19$!14&!17&!28"><!--check for amnesia(16), stun(10), sleep(2,19), charm(14,17), terror(28) -->
+				<!--AUTO WS SECTION-->
+				<if advanced="($autows=on)&($ReadySC=1)"><!--is it enabled and not in the process of WSing-->
+					<if advanced="(%p_tp>999)&(%t_distance<5)"><!--check for enough tp and distance to mob-->
+							<setvar name="ReadySC" value="0"/><!--in the process of WSing to not spam attempts-->
+							<command>/ws "$wstoauto" &lt;t&gt;</command><!--use ws-->
+							<command delay="1500">/ac var set ReadySC 1</command><!--try again in 1500ms if it didnt fire-->
+					</if>
+				</if>
+				<!--AUTO SAMBA SECTION-->
+				<if advanced="$autosamba=on">
+					<if p_tp=">350&<999"><!--do i have enough tp and not ready to WS-->
+						<if buffactive="!370"><!--check if haste samba isn't up-->
+							<command>/ja "Haste Samba" &lt;me&gt;</command><!--use haste samba-->
+						</if>
+					</if>
+				</if>
+			</if>
+			<!--HAPPENS UPON ENGAGING-->
+			<if advanced="$incombat=no">
+				<setvar name="incombat" value="yes"/><!--engaged flag so stuff only triggers once-->
+				<!--PRINTS AUTOMATION STATUS IN CHAT-->
+				<addtochat color="50">======== Low Enmity mode $-enmity ========</addtochat>
+				<addtochat color="50">======== Auto Samba mode $autosamba ========</addtochat>
+				<if advanced="$autows=on">
+					<addtochat color="50">======== Auto $wstoauto on ========</addtochat>
+				</if>
+				<else>
+					<addtochat color="50">======== AutoWS mode $autows  ========</addtochat>
+				</else>
+			</if>
+		</if>
+		<if p_status="idle"><!--triggers when not doing anything-->
+			<if advanced="$incombat=yes"><!--checks combat flag to get ready for previous section-->
+				<setvar name="incombat" value="no"/><!--sets engaged flag off-->
+			</if>
+			<equip set="Standard" /><!--equip idle gear-->
+			<if p_ismoving="true"><!--check if moving-->
+				<equip set="movementspeed"/>
+			</if>	
+		</if>
+		<if p_status="resting"><!--triggers when resting-->
+			<equip set="Resting" />
+		</if>	
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Box Step"><equip set="TH" /></if>
+	</jobability>
+
+	<premagic>
+		<equip set ="fastcast"/>
+		<if ad_name="stoneskin">
+			<equip>
+				<waist>Siegel Sash</waist>
+			</equip>
+		</if>
+	</premagic>
+
+	<midmagic>
+		<if buffactive="356">
+				<equip set="diffusion" />
+		</if>
+		<if ad_skill="EnhancingMagic">
+			<if ad_name="Stoneskin">
+				<equip set="Stoneskin" />
+			</if>
+			<else>
+				<equip set="enhancing"/>
+			</else>
+		</if>
+		<if ad_name="Cure*">
+			<if t_name="Catmato">
+				<equip set="cureme" />
+			</if>
+			<if buffactive="184">
+				<equip set="auroracure" />
+			</if>
+			<else>
+				<equip set="Curing" />
+			</else>
+		</if>
+		<if ad_name="Regen*"><equip set="regen" /></if>
+		<if ad_name="Poisona|Paralyna|Blindna|Silena|Stona|Viruna|Erase"><equip set="statuscure" /></if>
+		<if ad_name="Cursna"><equip set="Cursna" /></if>
+		<if ad_name="slow"><equip set="Slow" /></if>
+		<if ad_name="Paralyze"><equip set="Paralyze" /></if>
+		<if ad_name="Addle"><equip set="Addle" /></if>
+		<if ad_name="Sleep*|Repose|Dispel"><equip set="macc" /></if>
+		<if ad_name="Drain*|Aspir*"><equip set="drain" /></if>
+		<if ad_name="Flash"><equip set="Divine" /></if>
+		<if ad_name="Dia*"><equip set="Dia" /></if>
+		<if ad_name="Banish*"><equip set="Banish" /></if>
+		<if ad_name="Holy*"><equip set="Nuke" /></if>
+		<if ad_name="Bar*"><equip set="Barspells" /></if>
+		<if ad_name="dispelga"><equip set="dispelga" /></if>
+		<if ad_name="Spectral Flow|Subduction|Entomb|Cursed Sphere|Retinal Glare|Tenebral Crush|Polar Roar|Droning Whirlwind|Crashing Thunder|Uproot">
+			<equip set="nuke"/>
+		</if>
+		<if ad_name="Tenebral Crush">
+			<equip set="darknuke"/>
+		</if>
+		<if ad_name="Regurgitation|Water Bomb|Magic Hammer|Dream Flower"><equip set="macc" /></if>
+		<if ad_name="Stun"><equip set="Haste" /></if>
+	</midmagic>
+	<weaponskill>
+		<if ad_name="Hexa Strike">
+			<equip set="hexa" />
+		</if>
+		<if ad_name="Realmrazer">
+			<equip set="realm" />
+		</if>
+		<if ad_name="Savage Blade|Black Halo">
+			<equip set="savageblade" />
+		</if>
+		<if ad_name="Sanguine Blade">
+			<equip set="cata" />
+		</if>
+	</weaponskill>
+		
+</ashitacast>
+

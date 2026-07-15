@@ -1,0 +1,176 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<head></head>
+			<neck>Twilight Torque</neck>
+			<lear>Phawaylla Earring</lear>
+			<rear>Elusive Earring</rear>
+			<body></body>
+			<hands></hands>
+			<lring>Dark Ring</lring>
+			<rring></rring>
+			<back>Boxer's Mantle</back>
+			<waist>Acipayam Belt</waist>
+			<legs></legs>
+			<feet>Danzo Sune-Ate</feet>
+		</set>	
+		
+		<set name="TP">
+			<head>Hizamaru Somen</head>
+			<neck>Agasaya's Collar</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Hizamaru Haramaki</body>
+			<hands>Hizamaru Kote</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Hoard Ring</rring>
+			<back>Takaha Mantle</back>
+			<waist>Goading Belt</waist>
+			<legs>Hiza. Hizayoroi</legs>
+			<feet>Hiza. Sune-Ate</feet>
+		</set>	
+		
+		<set name="TP-Yoichi">
+			<head>Yaoyotl Helm</head>
+			<neck>Ganesha's Mala</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Miki. Breastplate</body>
+			<hands>Buremte Gloves</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Mars's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Dynamic Belt +1</waist>
+			<legs>Unkai Haidate +2</legs>
+			<feet>Karieyh Sollerets +1</feet>
+		</set>
+		
+		<set name="TP-Kraken">
+			<head>Otomi Helm</head>
+			<neck>Ocachi Gorget</neck>
+			<lear>Moonshade Earring</lear>
+			<rear>Mache Earring</rear>
+			<body>Sakonji Domaru +1</body>
+			<hands>Outrider Mittens</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Horde Ring</rring>
+			<back>Takaha Mantle</back>
+			<waist>Goading Belt</waist>
+			<legs>Tumbler Trunks</legs>
+			<feet>Kar. Sollerets +1</feet>
+		</set>
+		
+		
+		<set name="Fudo">
+			<head>Otomi Helm</head>
+			<neck>Agasaya's Collar</neck>
+			<lear>Moonshade Earring</lear>
+			<rear>Brutal Earring</rear>
+			<body>Sakonji Domaru +1</body>
+			<hands>Outrider Mittens</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Spiral Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Aqua Belt</waist>
+			<legs>Outrider Hose</legs>
+			<feet>Ejekamal Boots</feet>
+		</set>
+		
+		<set name="Apex">
+			<ammo>Antlion Arrow</ammo>
+			<head>Outrider Mask</head>
+			<neck>Breeze Gorget</neck>
+			<lear>Moonshade Earring</lear>
+			<rear>Phawaylla Earring</rear>
+			<body>Sakonji Domaru +1</body>
+			<hands>Outrider Mittens</hands>
+			<lring>Solemn Ring</lring>
+			<rring>Spiral Ring</rring>
+			<back>Buquwik cape</back>
+			<waist>Light Belt</waist>
+			<legs>Aeto. Trousers</legs>
+			<feet>Outrider Boots</feet>
+		</set>
+		
+		<set name="Meditate">
+		</set>
+		
+		<set name="PDT">
+			<head>Lithelimb Cap</head>
+			<neck>Twilight Torque</neck>
+			<body>Xaddi Mail</body>
+			<hands>Xaddi Gauntlets</hands>
+			<lring>Defending Ring</lring>
+			<rring>Patricius Ring</rring>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Xaddi Cuisses</legs>
+			<feet>Xaddi Boots</feet>
+		</set>
+		
+		<set name="MDT"><!--needs 23-->
+			<neck>Twilight Torque</neck>
+			<lear>Merman's Earring</lear>
+			<rear>Merman's Earring</rear>
+			<lring>Shadow Ring</lring>
+			<rring>Defending Ring</rring>
+			<back>Mollusca Mantle</back>
+		</set>
+		
+		<include>
+		</include>
+	</sets>
+
+	<variables>
+		<var name="Set">Hybrid</var>
+	</variables>
+
+	<inputcommands>
+		<cmd input="/trigger2">
+			<gearlock delay="5" />
+			<equip set="PDT" />
+		</cmd>
+		<cmd input="/trigger3">
+			<gearlock delay="5" />
+			<equip set="MDT" />
+		</cmd>
+		<cmd input="/changeset ">
+			<setvar name="Set" value="%arg1" />
+			<addtochat color="159">TP Set: $Set</addtochat>
+			<doidlegear />
+		</cmd>
+	</inputcommands>
+		
+			
+	<idlegear>
+		<if p_status="engaged">
+			<if eq_range="yoichinoyumi"><equip set="TP-Yoichi" /></if>
+			<if eq_main="Kraken Club"><equip set="TP-Kraken" /></if>
+			<else><equip set="TP" /></else>		
+		</if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Meditate"><equip set="Meditate" /></if>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Apex Arrow"><equip set="Apex" /></if>
+		<if ad_name="Tachi: Shoha|Tachi: Fudo">
+			<if eq_range="yoichinoyumi">	
+				<change id="200" />
+				<equip set="Apex" />
+			</if>
+			<else>
+				<equip when="precast" set="Fudo" />
+			</else>
+		</if>
+	</weaponskill>
+</ashitacast>

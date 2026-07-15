@@ -1,0 +1,294 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Standard">
+			<head>Mummu Bonnet +2</head>
+			<neck>Loricate Torque +1</neck>
+			<lear>Phawaylla Earring</lear>
+			<rear>Ethereal Earring</rear>
+			<body>Malignance tabard</body>
+			<hands>Mummu Wrists</hands>
+			<lring>Defending Ring</lring>
+			<rring>Warp Ring</rring>
+			<back>Iximulew Cape</back>
+			<waist>Acipayam Belt</waist>
+			<legs>Mummu Kecks</legs>
+			<feet>Jute Boots +1</feet>
+		</set>
+
+		<set name="Exenterator" baseset="rudras">
+			<head>Espial Cap</head>
+			<neck>Soil Gorget</neck>
+			<lear>Suppanomimi</lear>
+			<rear>Brutal Earring</rear>
+			<body>Espial Gambison</body>
+			<hands>Pillager's Armlets</hands>
+			<lring>Epona's Ring</lring>
+			<rring>Solemn Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Soil Belt</waist>
+			<legs>Kaabnax Trousers</legs>
+			<feet>Espial Socks</feet>
+		</set>
+		<set name="fastcast">
+			<head augment="S2794738588269534884">Herculean Helm</head>
+			<body augment="S269911938437474242">Samnuha Coat</body>
+			<neck>Voltsurge Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+		</set>
+		<set name="utcast" baseset="fastcast">
+			<neck>Magoraga Beads</neck>
+		</set>
+		<set name="tp">
+			<main>Tauret</main>
+			<sub lock="true">Blurred Knife +1</sub>
+			<sub>Kraken Club</sub>
+			<ammo>Falcon Eye</ammo>
+			<head>Malignance Chapeau</head>
+			<body>Malignance Tabard</body>
+			<hands>Regal Gloves</hands>
+			<legs>Malignance Tights</legs>
+			<feet>Malignance Boots</feet>
+			<neck>Combatant's torque</neck>
+			<waist>Reiki Yotai</waist>
+			<ear1>Odr Earring</ear1>
+			<ear2>Digni. Earring</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Chirich Ring +1</ring2>
+			<!--back lock="true">Mecisto. Mantle</back-->
+			<back>Enuma Mantle</back>
+		</set>
+		<set name="evisceration">
+			<ammo>Falcon Eye</ammo>
+			<head>Mummu Bonnet +2</head>
+			<body>Mummu Jacket +1</body>
+			<hands>Mummu Wrists +1</hands>
+			<legs>Mummu Kecks +1</legs>
+			<feet>Mummu Gamash. +1</feet>
+			<neck>Soil Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Odr Earring</ear2>
+			<ring1>Begrudging Ring</ring1>
+			<ring2>Ilabrat Ring</ring2>
+			<back augment="S94235946542094424">Canny Cape</back>
+		</set>
+		<set name="rudras" baseset="sneakattack">
+			<head augment="S6377209853135124601">Herculean Helm</head>
+			<body augment="S365904440996091346793540">Herculean Vest</body>
+			<hands>Meg. Gloves +2</hands>
+			<feet augment="S35292304617540">Herculean Boots</feet>
+			<ear1>Odr Earring</ear1>
+			<ear2>Moonshade Earring</ear2>
+		</set>
+
+		<set name="th">
+			<head augment="S94274868101411615200324">Herculean Helm</head>
+			<hands augment="M3333">Plun. Armlets +1</hands>
+			<legs augment="S942746044828124646">Herculean Trousers</legs>
+			<feet>Skulk. Poulaines +1</feet>
+		</set>
+		<set name="steal|despoil" baseset="th">
+			<ammo>Barathrum</ammo>
+			<waist>Key Ring Belt</waist>
+		</set>
+		<set name="aeolian">
+			<ammo>Seeth. Bomblet +1</ammo>
+			<head augment="S94274868101411615200324">Herculean Helm</head>
+			<body augment="S365904440996091346793540">Herculean Vest</body>
+			<hands augment="D16183600481984">Pursuer's Cuffs</hands>
+			<legs augment="S17747865364289218502">Herculean Trousers</legs>
+			<feet augment="D15427686107583">Adhemar Gamashes</feet>
+			<neck>Baetyl Pendant</neck>
+			<waist>Eschan Stone</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Metamorph Ring</ring2>
+			<back>Toro Cape</back>
+		</set>
+
+		<set name="gilfinder">
+			<hands>Andvaranauts</hands>
+			<legs augment="M1360">Plun. Culottes +1</legs>
+			<neck>Bandolero Scarf</neck>
+		</set>
+		<set name="savage">
+			<ammo>Mantoptera Eye</ammo>
+			<head augment="S6377209853135124601">Herculean Helm</head>
+			<body augment="S365904440996091346793540">Herculean Vest</body>
+			<hands>Meg. Gloves +2</hands>
+			<legs augment="S182076079662084240">Samnuha Tights</legs>
+			<feet augment="S35292304617540">Herculean Boots</feet>
+			<neck>Anu Torque</neck>
+			<waist>Sailfi Belt +1</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Sherida Earring</ear2>
+			<ring1>Regal Ring</ring1>
+			<ring2>Rufescent Ring</ring2>
+			<back augment="S94235946542094424">Canny Cape</back>
+		</set>
+		<set name="steps">
+			<ammo>Falcon Eye</ammo>
+			<head>Malignance Chapeau</head>
+			<body>Malignance Tabard</body>
+			<hands>Malignance Gloves</hands>
+			<legs>Malignance Tights</legs>
+			<feet>Malignance Boots</feet>
+			<neck>Subtlety Spec.</neck>
+			<waist>Null Belt</waist>
+			<ear1>Digni. Earring</ear1>
+			<ear2>Odr Earring</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Chirich Ring +1</ring2>
+			<back>Grounded Mantle</back>
+		</set>
+		<set name="sneakattack">
+			<ammo>Expeditious Pinion</ammo>
+			<head>Pill. Bonnet +1</head>
+			<body>Pillager's Vest +1</body>
+			<hands>Malignance Gloves</hands>
+			<legs augment="S182076079662084240">Samnuha Tights</legs>
+			<feet>Malignance Boots</feet>
+			<neck>Anu Torque</neck>
+			<waist>Sailfi Belt +1</waist>
+			<ear1>Odr Earring</ear1>
+			<ear2>Sherida Earring</ear2>
+			<ring1>Regal Ring</ring1>
+			<ring2>Ilabrat Ring</ring2>
+			<back augment="S94235946542094424">Canny Cape</back>
+		</set>
+		<set name="critdmg">
+			<head>Pill. Bonnet +1</head>
+			<body>Pillager's Vest +1</body>
+			<back augment="S94235946542094424">Canny Cape</back>
+		</set>
+		<set name="SARudras" baseset="rudras">
+			<head>Pill. Bonnet +1</head>
+			<body>Pillager's Vest +1</body>
+			<back augment="S94235946542094424">Canny Cape</back>
+		</set>
+		<set name="SASavage" baseset="savage">
+			<head>Pill. Bonnet +1</head>
+			<body>Pillager's Vest +1</body>
+			<back augment="S94235946542094424">Canny Cape</back>
+		</set>
+	</sets>
+
+	<variables>
+		<var name="Set">Old</var>
+		<var name="TH">TH</var>
+		<var name="autows">off</var>
+		<var name="autosamba">off</var>
+		<var name="ReadySC">0</var>
+		<var name="-enmity">off</var>
+		<var name="wstoauto">Evisceration</var>
+		<var name="incombat">no</var>
+	</variables>
+
+	<inputcommands>
+
+		<cmd input="/wson">
+			<setvar name="autows" value="on"/>
+			<addtochat color="50">======== AutoWS enabled: $wstoauto ========</addtochat>
+		</cmd>
+		<cmd input="/wsoff">
+			<setvar name="autows" value="off"/>
+			<addtochat color="50">======== AutoWS disabled ========</addtochat>
+		</cmd>
+		<cmd input="/sambaon">
+			<setvar name="autosamba" value="on"/>
+			<addtochat color="50">======== AutoSamba enabled ========</addtochat>
+		</cmd>
+		<cmd input="/sambaoff">
+			<setvar name="autosamba" value="off"/>
+			<addtochat color="50">======== AutoSamba disabled ========</addtochat>
+		</cmd>
+		<cmd input="/enmityon">
+			<setvar name="-enmity" value="on"/>
+			<addtochat color="50">======== Low Enmity mode enabled ========</addtochat>
+		</cmd>
+		<cmd input="/enmityoff">
+			<setvar name="-enmity" value="off"/>
+			<addtochat color="50">======== Low Enmity mode disabled ========</addtochat>
+		</cmd>
+	</inputcommands>
+
+	<premagic>
+		<equip set="fastcast" />
+		<if ad_name="Utsusemi*">
+			<equip set="utcast"/>
+		</if>
+	</premagic>
+
+
+	<idlegear>
+		<if p_tp="<1000" advanced="$ReadySC=0">
+			<setvar name="ReadySC" value="1"/>
+		</if>
+		<if p_status="engaged">
+			<equip set="tp"/>
+				<if buffactive="!16">
+					<if advanced="$autows=on" advanced="$ReadySC=1">
+						<if advanced="(%p_tp>999)&(%t_distance<5)">
+								<setvar name="ReadySC" value="0"/>
+								<command>/ws "$wstoauto" &lt;t&gt;</command>
+								<command delay="1500">/ac var set ReadySC 1</command>
+							</if>
+					</if>
+					<if advanced="$autosamba=on">
+						<if p_tp=">350&<999">
+							<if buffactive="!370">
+								<command>/ja "Haste Samba" &lt;me&gt;</command>
+							</if>
+						</if>
+					</if>
+				</if>
+				<if buffactive="65">
+					<equip set="sneakattack"/>
+				</if>
+		</if>
+		<else>
+			<equip set="Standard" />
+		</else>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Quickstep|Box Step"><equip set="Steps" /></if>
+		<!--<if spell="Flee"><equip when="precast"><feet>Rogue's Poulaines</feet></equip></if>-->
+		<if ad_name="Assassin's Charge">
+			<equip><feet>Asn. Poulaines +2</feet></equip>
+		</if>
+		<if ad_name="Feint">
+			<equip><legs>Asn. Culottes +2</legs></equip>
+		</if>
+		<if ad_name="Perfect Dodge"><equip><hands>Plunderer's Armlets +1</hands></equip></if>
+		<if ad_name="jump"><equip set="th" /></if>
+		<if ad_name="hide"><equip><body>Pillager's Vest +1</body></equip></if>
+		<if ad_name="steal"><equip set="steal" /></if>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Exenterator"><equip set="Exenterator" /></if>
+		<if ad_name="Evisceration"><equip set="Evisceration" /></if>
+		<if ad_name="Rudra's Storm"><equip set="rudras" /></if>
+			<if buffactive="65">
+				<equip set="SARudras"/>
+			</if>
+		<if ad_name="Mandalic Stab"><equip set="Mandalic-$Set" /></if>
+		<if ad_name="Shark Bite"><equip set="Shark-$Set" /></if>
+		<if ad_name="Dancing Edge"><equip set="DE-$Set" /></if>
+		<if ad_name="Aeolian Edge|Cyclone|Gust Slash"><equip set="aeolian" /></if>
+
+		<if ad_name="Savage Blade|True Strike|Swift Blade"><equip set="savage" /></if>
+			<if buffactive="65">
+				<equip set="SASavage"/>
+			</if>
+	</weaponskill>
+</ashitacast>

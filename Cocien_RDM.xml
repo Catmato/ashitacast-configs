@@ -1,0 +1,659 @@
+<ashitacast>
+    <settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+        <buffupdate>false</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+        <statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+        <hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+        <autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+    </settings>
+    <sets>
+		    <set name="Moving" Baseset="Idle">
+		     <legs>Carmine Cuisses +1</legs>
+		</set>
+		<set name="tp">
+			<main augment="O372879458304063">Crocea Mors</main>
+			<sub>Tauret</sub>
+			<ammo>Ginsen</ammo>
+			<head augment="S28750923337796">Taeon Chapeau</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands>Aya. Manopolas +2</hands>
+			<legs augment="S46342706597956">Taeon Tights</legs>
+			<feet augment="D21732731652876">Carmine Greaves +1</feet>
+			<neck>Anu Torque</neck>
+			<waist>Orpheus's Sash</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Mache Earring +1</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Ilabrat Ring</ring2>
+			<back augment="S81370710055425541542542">Sucellos's Cape</back>
+		</set>
+		<set name="ACC">
+			<main augment="O372879458304063">Crocea Mors</main>
+			<sub>Daybreak</sub>
+			<ammo>Ginsen</ammo>
+			<head augment="D21732731652876">Carmine Mask +1</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands>Malignance Gloves</hands>
+			<legs augment="D6232182625036">Carmine Cuisses +1</legs>
+			<feet augment="D21732731652876">Carmine Greaves +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Grunfeld Rope</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Mache Earring +1</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Ilabrat Ring</ring2>
+			<back augment="S81370710055425541542542">Sucellos's Cape</back>
+		</set>
+		<set name="Odin">
+			<main>Wind Knife</main>
+			<sub>Norgish Dagger</sub>
+			<range>Ullr</range>
+			<head augment="D21732731652876">Carmine Mask +1</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands>Aya. Manopolas +2</hands>
+			<legs augment="D6232182625036">Carmine Cuisses +1</legs>
+			<feet augment="D21732731652876">Carmine Greaves +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Orpheus's Sash</waist>
+			<ear1>Sherida Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Petrov Ring</ring1>
+			<ring2>Hetairoi Ring</ring2>
+			<back augment="S81370710055425541542542">Sucellos's Cape</back>
+		</set>		
+
+		<set name="Idle">
+			<head augment="M88671560">Viti. Chapeau +3</head>
+			<body>Jhakri Robe +2</body>
+			<neck>Bathy Choker</neck>
+			<ammo>Homiliary</ammo>2
+			<neck>Incanter's Torque</neck>
+			<waist>Fucho-no-Obi</waist>
+			<hands>Viti. Gloves +3</hands>
+			<ear1>Infused Earring</ear1>
+			<ear2>Dawn Earring</ear2>
+			<legs>Merlinic Shalwar</legs>
+			<feet>Merlinic Crackows</feet>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<back augment="S6172553042995718565">Sucellos's Cape</back>
+		</set>
+		<set name="Fastcast">
+		    <main>Crocea Mors</main>
+			<head>Atro. Chapeau +2</head>
+			<body augment="M7428">Viti. Tabard +3</body>
+			<neck>Baetyl Pendant</neck>
+			<legs>Kaykaus Tights</legs>
+			<hands>Leyline Gloves</hands>
+			<feet augment="S7052071259354816517">Merlinic Crackows</feet>
+			<waist>Witful Belt</waist>
+			<ear1>Malignance Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+			<ring2>Kishar Ring</ring2>
+		</set>
+		<set name="Nuke">
+		    <main>Grioavolr</main>
+			<sub>Enki Strap</sub>
+			<ammo>Ghastly Tathlum</ammo>
+			<head>Jhakri Coronal +1</head>
+			<body>Amalric Doublet +1</body>
+			<hands>Jhakri Cuffs +1</hands>
+			<legs>Merlinic Shalwar</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Luminary Sash</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Shiva Ring +1</ring1>
+			<ring2>Shiva Ring +1</ring2>
+			<back augment="S6172553042995718565">Sucellos's Cape</back>
+		</set>
+		<set name="Drain">
+			<ammo>Ghastly Tathlum</ammo>
+			<head>Pixie Hairpin +1</head>
+			<body>Atrophy Tabard +2</body>
+			<hands>Jhakri Cuffs +1</hands>
+			<legs augment="S52927318571141">Merlinic Shalwar</legs>
+			<feet augment="S7052071259354816517">Merlinic Crackows</feet>
+			<neck>Erra Pendant</neck>
+			<waist>Fucho-no-Obi</waist>
+			<ear1>Gwati Earring</ear1>
+			<ear2>Magnetic Earring</ear2>
+			<ring1>Evanescence Ring</ring1>
+			<ring2>Ayanmo Ring</ring2>
+			<back>Toro Cape</back>
+		</set>
+		<set name="Enfeeble">
+			<main>Grioavolr</main>
+			<sub>Enki Strap</sub>
+			<range>Regal Gem</range>
+			<head augment="M88671560">Viti. Chapeau +3</head>
+			<body>Atrophy Tabard +2</body>
+			<hands>Kaykaus Cuffs</hands>
+			<legs>Kaykaus Tights</legs>
+			<feet augment="M1357">Vitiation Boots +3</feet>
+			<waist>Luminary Sash</waist>
+			<neck>Dls. Torque +1</neck>
+			<ear1>Gwati Earring</ear1>
+			<ear2>Digni. Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<back augment="S6172553042995718565">Sucellos's Cape</back>
+		</set>
+		<set name="Enhancing">
+			<main>Pukulatmuj +1</main>
+			<sub>Ammurapi Shield</sub>
+			<head>Lethargy Chappel +1</head>
+			<body>Viti. Tabard +3</body>
+			<hands>Atrophy Gloves +2</hands>
+			<legs>Atrophy Tights +2</legs>
+			<feet>Leth. Houseaux +1</feet>
+			<neck>Dls. Torque +1</neck>
+			<ear1>Calamitous Earring</ear1>
+			<ear2>Magnetic Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<waist>Olympus Sash</waist>
+			<back augment="S6172553042995718565">Sucellos's Cape</back>
+		</set>
+		<set name="Cure">
+			<ammo>Regal Gem</ammo>
+			<head>Vanya Hood</head>
+			<body augment="M7428">Viti. Tabard +3</body>
+			<hands>Kaykaus Cuffs</hands>
+			<legs>Atrophy Tights +2</legs>
+			<feet>Vanya Clogs</feet>
+			<neck>Healing Torque</neck>
+			<waist>Bishop's Sash</waist>
+			<ear1>Mendi. Earring</ear1>
+			<ear2>Roundel Earring</ear2>
+			<ring2>Haoma's Ring</ring2>
+			<ring1>Sirona's Ring</ring1>
+			<back augment="S7931598537552334016">Ghostfyre Cape</back>
+		</set>
+		<set name="Stun">
+			<main>Crocea Mors</main>
+			<ammo>Hydrocera</ammo>
+			<head>Jhakri Coronal +1</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
+			<hands>Jhakri Cuffs +1</hands>
+			<legs>Jhakri Slops +2</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck augment="O3006566236160203">Dls. Torque +1</neck>
+			<waist>Luminary Sash</waist>
+			<ear1>Enchntr. Earring +1</ear1>
+			<ear2>Gwati Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<back augment="S6172553042995718565">Sucellos's Cape</back>
+		</set>
+		<set name="Phalanx II" baseset="Enhancing">
+			<hands>Viti. Gloves +3</hands>
+		</set>
+		<set name="Savage">
+			<ammo>Regal Gem</ammo>
+			<head>Viti. Chapeau +3</head>
+			<body>Viti. Tabard +3</body>
+			<hands>Atrophy Gloves +2</hands>
+			<legs>Jhakri Slops +2</legs>
+			<feet>Carmine Greaves +1</feet>
+			<neck>Duelist's Torque +1</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Moonshade Earring</ear1>
+			<ear2>Ishvara Earring</ear2>
+			<ring1>Apate Ring</ring1>
+			<ring2>Karieyh Ring</ring2>
+			<back augment="S8137071005542518574">Sucellos's Cape</back>
+		</set>
+		<set name="CDC">
+			<ammo>Yamarang</ammo>
+			<head>Viti. Chapeau +3</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands>Malignance Gloves</hands>
+			<legs>Viti. Tights +3</legs>
+			<feet>Thereoid Greaves</feet>
+			<neck>Duelist's Torque +1</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Mache Earring +1</ear1>
+			<ear2>Sherida Earring</ear2>
+			<ring1>Karieyh Ring</ring1>
+			<ring2>Ilabrat Ring</ring2>
+			<back augment="S8137071005542518574">Sucellos's Cape</back>
+		</set>
+		<set name="ESkill">
+			<main>Pukulatmuj +1</main>
+			<sub>Secespita</sub>
+			<ammo>Ghastly Tathlum</ammo>
+			<head augment="M88671560">Viti. Chapeau +3</head>
+			<body augment="M7428">Viti. Tabard +3</body>
+			<hands augment="M1354">Viti. Gloves +3</hands>
+			<legs>Atrophy Tights +2</legs>
+			<feet>Leth. Houseaux +1</feet>
+			<neck>Incanter's Torque</neck>
+			<waist>Olympus Sash</waist>
+			<ear1>Augment. Earring</ear1>
+			<ear2>Dawn Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<back augment="S7931598537552334016">Ghostfyre Cape</back>
+		</set>
+		<set name="Sanguine">
+			<ammo>Pemphredo Tathlum</ammo>
+			<head>Pixie Hairpin +1</head>
+			<body>Amalric Doublet +1</body>
+			<hands>Jhakri Cuffs +2</hands>
+			<legs>Amalric Slops +1</legs>
+			<feet>Amalric Nails +1</feet>
+			<neck>Baetyl Pendant</neck>
+			<waist>Orpheus's Sash</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Malignance Earring</ear2>
+			<ring1>Archon Ring</ring1>
+			<ring2>Epaminonda's Ring</ring2>
+			<back augment="S7931771647437318565">Sucellos's Cape</back>
+		</set>
+		<set name="TH">
+		    <waist>Chaac Belt</waist>
+			<feet>Volte Boots</feet>
+		</set>
+		<set name="Ranged">
+			<range>Ullr</range>
+			<ammo>Antlion Arrow</ammon>
+		</set>
+
+		<set name="Aeolian">
+			<ammo>Pemphredo Tathlum</ammo>
+			<head>Jhakri Coronal +1</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs augment="D20976940633860">Amalric Slops +1</legs>
+			<feet>Amalric Nails +1</feet>
+			<neck>Baetyl Pendant</neck>
+			<waist>Orpheus's Sash</waist>
+			<ear1>Malignance Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Shiva Ring +1</ring1>
+			<ring2>Epaminondas's Ring</ring2>
+			<back augment="S8138359574374818565">Sucellos's Cape</back>
+		</set>
+		
+		<set name="Seraph">
+			<ammo>Regal Gem</ammo>
+			<head>Jhakri Coronal +1</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
+			<hands>Jhakri Cuffs +1</hands>
+			<legs augment="D20976940633860">Amalric Slops +1</legs>
+			<feet>Amalric Nails +1</feet>
+			<neck>Baetyl Pendant</neck>
+			<waist>Orpheus's Sash</waist>
+			<ear1>Malignance Earring</ear1>
+			<ear2>Moonshade Earring</ear2>
+			<ring1>Shiva Ring +1</ring1>
+			<ring2>Epaminondas's Ring</ring2>
+			<back augment="S8138359574374818565">Sucellos's Cape</back>
+		</set>
+			
+	</sets>
+	
+	<inputcommands>
+		<cmd input="/cdcon">
+		     <setvar name="autocdc" value="1"/>
+		     <addtochat color="50">Auto CDC GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/cdcoff">
+		     <setvar name="autocdc" value="0"/>
+		     <addtochat color="50">Auto CDC OFF</addtochat>
+        </cmd>
+		<cmd input="/accon">
+		     <setvar name="acc" value="1"/>
+		     <addtochat color="50">ACC SET</addtochat>
+        </cmd>
+		<cmd input="/accoff">
+		     <setvar name="acc" value="0"/>
+		     <addtochat color="50">ACC OFF</addtochat>
+        </cmd>
+		<cmd input="/raon">
+		     <setvar name="ranged" value="1"/>
+		     <addtochat color="50">Ranged Equipped!!!</addtochat>
+        </cmd>
+		<cmd input="/raoff">
+		     <setvar name="ranged" value="0"/>
+		     <addtochat color="50">Ranged OFF</addtochat>
+        </cmd>
+		<cmd input="/sanon">
+		     <setvar name="autosan" value="1"/>
+		     <addtochat color="50">Auto Sanguine GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/sanoff">
+		     <setvar name="autosan" value="0"/>
+		     <addtochat color="50">Auto Sanguine OFF</addtochat>
+        </cmd>
+		<cmd input="/sbon">
+		     <setvar name="autosb" value="1"/>
+		     <addtochat color="50">Auto Savage Blade GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/sboff">
+		     <setvar name="autosb" value="0"/>
+		     <addtochat color="50">Auto Savage Blade OFF</addtochat>
+        </cmd>
+		<cmd input="/th">
+		     <setvar name="treasure" value="1"/>
+			 <addtochat color="50">TH IS ACTIVE</addtochat>
+		</cmd>
+        <cmd input="/thoff">
+             <setvar name="treasure" value="0"/>
+             <addtochat color="50">TH IS OFF</addtochat>
+        </cmd>
+		<cmd input="/odin">
+		     <setvar name="Odin" value="1"/>
+			 <addtochat color="50">ODIN ACTIVE</addtochat>
+		</cmd>
+        <cmd input="/odinoff">
+             <setvar name="Odin" value="0"/>
+             <addtochat color="50">ODIN IS OFF</addtochat>
+        </cmd>
+		<cmd input="/aeon">
+		     <setvar name="autoaeo" value="1"/>
+		     <addtochat color="50">Auto Aeolian GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/aeoff">
+		     <setvar name="autoaeo" value="0"/>
+		     <addtochat color="50">Auto Aeolian OFF</addtochat>
+        </cmd>	
+		<cmd input="/ser">
+		     <setvar name="autoser" value="1"/>
+		     <addtochat color="50">Auto Seraph's GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/seroff">
+		     <setvar name="autoser" value="0"/>
+		     <addtochat color="50">Auto Seraph's OFF</addtochat>
+        </cmd>				
+    </inputcommands>
+    <premagic>
+	 <equip set="Fastcast" />
+    </premagic>
+    <midmagic>
+		<if ad_name="Stun">
+			<equip set="Stun" />
+			<return />
+		</if>
+		<!-- <if ad_name="Stoneskin"> -->
+			<!-- <equip set="StoneskinPrecast" /> -->
+		<!-- </if> -->
+		<elseif ad_name="Cure*|Curaga*">
+			<equip set="Cure" />
+			<if mode="OR" e_weatherelement="light" e_dayelement="light">
+					<equip>
+						<main>Chatoyant Staff</main>
+						<sub>Enki strap</sub>
+						<back>Twilight Cape</back>
+					</equip>
+			</if>
+		</elseif>
+		<elseif ad_skill="ElementalMagic">
+			<if ad_name="Impact"><equip set="Impact" /></if>
+			<else>
+				<equip when="$GearTime" set="Nuke" />
+				<if advanced="%ad_element=%e_dayelement">
+					<if ad_element="Light|Dark|Thunder|Ice|Fire|Wind|Water|Earth">
+						<equip>
+							<back>Twilight Cape</back>
+						</equip>
+					</if>
+				</if>
+				<elseif advanced="%ad_element=%e_weatherelement">
+					<if ad_element="Light|Dark|Thunder|Ice|Fire|Wind|Water|Earth">
+						<equip when="midcast">
+							<back>Twilight Cape</back>
+						</equip>
+					</if>
+				</elseif>
+			</else>
+		</elseif>
+		<elseif ad_skill="DarkMagic">
+			<if ad_name="Drain|Aspir*"><equip set="Drain" /></if>
+			<else><equip set="Dark" /></else>
+		</elseif>		
+		<elseif ad_skill="EnfeeblingMagic">
+			<if ad_name="Slow*|Paralyze*|Blind*">
+				<equip set="Enfeeble" />
+				<if ad_name="Slow II"><equip><head>Viti. Chapeau +3</head></equip></if>
+				<elseif ad_name="Paralyze II"><equip><feet>Vitiation Boots +3</feet></equip></elseif>
+				<elseif ad_name="Blind II"><equip><feet>Viti. Tights +3</feet></equip></elseif>
+			</if>
+			<else><equip set="Enfeeble" /></else>
+			<if ad_name="Dia III">	
+				<equip>
+					<ammo>Regal Gem</ammo>
+					<head>Viti. Chapeau +3</head>
+					<body>Lethargy Sayon +1</body>
+					<lring>Kishar Ring</lring>
+					<feet>Vitiation Boots +3</feet>
+				</equip>
+			</if>
+			<if buffactive="454"><equip><hands>Leth. Gantherots +1</hands></equip></if>
+		</elseif>
+		<elseif ad_skill="EnhancingMagic">
+			<if ad_name="En*|Bar*"><equip set="ESkill" /></if>
+			<elseif ad_name="Phalanx"><equip set="Enhancing" /></elseif>
+			<elseif ad_name="Phalanx II"><equip set="Phalanx II" /></elseif>
+			<elseif ad_name="Regen*"><equip set="Enhancing" /></elseif>
+			<elseif ad_name="Temper II"><equip set="ESkill" /></elseif>
+			<elseif ad_name="Refresh*">
+				<if at_name="%p_name">
+					<equip set="Enhancing" />
+						<equip>
+							<feet>Inspirited Boots</feet>
+						</equip>
+				</if>
+				<else>
+					<equip set="Enhancing" /></else>
+				<elseif buffactive="419" advanced="%at_name!=%p_name">
+					<equip>
+						<head>Lethargy Chappel +1</head>
+						<body>Lethargy Sayon +1</body>
+						<hands>Leth. Gantherots +1</hands>
+						<legs>Leth. Fuseau +1</legs>
+						<feet>Leth. Houseaux +1</feet>		
+						<neck>Dls. Torque +1</neck>					
+					</equip>
+				</elseif>
+			</elseif>
+			<elseif ad_name="Haste*">
+				<if at_name="%p_name">
+					<equip set="Enhancing" />
+				</if>
+				<else>
+					<equip set="Enhancing" />
+				</else>		
+				<elseif buffactive="419" advanced="%at_name!=%p_name">
+					<equip>
+						<head>Lethargy Chappel +1</head>
+						<body>Lethargy Sayon +1</body>
+						<hands>Leth. Gantherots +1</hands>
+						<legs>Leth. Fuseau +1</legs>
+						<feet>Leth. Houseaux +1</feet>		
+						<neck>Dls. Torque +1</neck>				
+					</equip>
+				</elseif>
+			</elseif>
+			<elseif ad_name="Protect*">
+				<if at_name="%p_name"><equip set="Enhancing" /></if>
+				<else><equip set="Enhancing" /></else>		
+				<elseif buffactive="419" advanced="%at_name!=%p_name">
+					<equip>
+						<head>Lethargy Chappel +1</head>
+						<body>Lethargy Sayon +1</body>
+						<hands>Leth. Gantherots +1</hands>
+						<legs>Leth. Fuseau +1</legs>
+						<feet>Leth. Houseaux +1</feet>		
+						<neck>Dls. Torque +1</neck>				
+					</equip>					
+				</elseif>
+			</elseif>			
+			<elseif ad_name="Shell*">
+				<if at_name="%p_name"><equip set="Enhancing" /></if>
+				<else><equip set="Enhancing" /></else>		
+				<elseif buffactive="419" advanced="%at_name!=%p_name">
+					<equip>
+						<head>Lethargy Chappel +1</head>
+						<body>Lethargy Sayon +1</body>
+						<hands>Leth. Gantherots +1</hands>
+						<legs>Leth. Fuseau +1</legs>
+						<feet>Leth. Houseaux +1</feet>		
+						<neck>Dls. Torque +1</neck>			
+					</equip>			
+				</elseif>		
+			</elseif>
+			<elseif ad_name="Phalanx*">
+				<if at_name="%p_name"><equip set="Phalanx II" /></if>
+				<else><equip set="Enhancing" /></else>		
+				<elseif buffactive="419" advanced="%at_name!=%p_name">
+					<equip>
+						<head>Lethargy Chappel +1</head>
+						<body>Lethargy Sayon +1</body>
+						<hands>Leth. Gantherots +1</hands>
+						<legs>Leth. Fuseau +1</legs>
+						<feet>Leth. Houseaux +1</feet>		
+						<neck>Dls. Torque +1</neck>				
+					</equip>			
+				</elseif>			
+			</elseif>
+			<elseif ad_name="Regen*">
+				<if at_name="%p_name"><equip set="Enhancing" /></if>
+				<else><equip set="Enhancing" /></else>		
+				<elseif buffactive="419" advanced="%at_name!=%p_name">
+					<equip>
+						<head>Lethargy Chappel +1</head>
+						<body>Lethargy Sayon +1</body>
+						<hands>Leth. Gantherots +1</hands>
+						<legs>Leth. Fuseau +1</legs>
+						<feet>Leth. Houseaux +1</feet>		
+						<neck>Dls. Torque +1</neck>				
+					</equip>			
+				</elseif>			
+			</elseif>					
+			<elseif ad_name="*storm*">
+				<if at_name="%p_name"><equip set="Enhancing" /></if>
+				<else><equip set="Enhancing" /></else>		
+				<elseif buffactive="419" advanced="%at_name!=%p_name">
+					<equip>
+						<head>Lethargy Chappel +1</head>
+						<body>Lethargy Sayon +1</body>
+						<hands>Leth. Gantherots +1</hands>
+						<legs>Leth. Fuseau +1</legs>
+						<feet>Leth. Houseaux +1</feet>		
+						<neck>Dls. Torque +1</neck>				
+					</equip>			
+				</elseif>				
+			</elseif>
+			<elseif ad_name="Gain*">
+				<if at_name="%p_name"><equip set="Phalanx II" /></if>					
+			</elseif>
+			<elseif ad_name="Flurry*">
+				<if at_name="%p_name"><equip set="Enhancing" /></if>
+				<else><equip set="Enhancing" /></else>		
+				<elseif buffactive="419" advanced="%at_name!=%p_name">
+					<equip>
+						<head>Lethargy Chappel +1</head>
+						<body>Lethargy Sayon +1</body>
+						<hands>Leth. Gantherots +1</hands>
+						<legs>Leth. Fuseau +1</legs>
+						<feet>Leth. Houseaux +1</feet>		
+						<neck>Dls. Torque +1</neck>				
+					</equip>			
+				</elseif>			
+			</elseif>			
+			<else><equip set="Enhancing" /></else>				
+		</elseif>	
+	</midmagic>
+	<jobability>
+		<if ad_name="Chainspell"><equip><body>Vitiation Tabard +3</body></equip></if>
+		<if ad_name="Saboteur"><registerbuff id="454" /></if>
+		<if ad_name="Composure"><registerbuff id="419" /></if>
+	</jobability>
+	<weaponskill>
+    </weaponskill>
+    <idlegear>
+        <if p_status="idle">
+            <equip set="Idle" />
+        </if>
+        <if p_status="engaged">
+            <equip set="TP" />
+        </if>
+        <if p_status="resting">
+            <equip set="Resting" />
+        </if>
+		<if advanced="$autocdc=1">
+		   <if p_tp=">1000">
+		   <if p_status="Engaged">
+		      <equip set="CDC" />  
+		      <command>/ws "Chant du Cygne" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if> 
+		<if advanced="$acc=1">
+		      <equip set="ACC" />  
+		   </if>
+		<if advanced="$autosb=1">
+		   <if p_tp=">1499">
+		   <if p_status="Engaged">
+		      <equip set="Savage" />  
+		      <command>/ws "Savage Blade" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if>
+		<if advanced="$autosan=1">
+		   <if p_tp=">1000">
+		   <if p_status="Engaged">
+		      <equip set="Sanguine" />  
+		      <command>/ws "Sanguine Blade" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if>
+		<if advanced="$treasure=1">
+		    <equip set="TH" />
+		</if>
+		<if advanced="$Odin=1">
+		    <equip set="Odin" />
+		</if>
+		<if advanced="$ranged=1">
+		    <equip set="ranged" />
+		</if>	
+
+		<if advanced="$autoaeo=1">
+		   <if p_tp=">1000">
+		   <if p_status="Engaged">
+		      <equip set="Aeolian" />  
+		      <command>/ws "Aeolian Edge" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if> 	
+
+		<if advanced="$autoser=1">
+		   <if p_tp=">1000">
+		   <if p_status="Engaged">
+		      <equip set="Seraph" />  
+		      <command>/ws "Seraph Blade" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if> 
+		
+		<if p_status="Engaged">
+		<if eq_main="Crocea Mors"><equip lock="true"><main>Crocea Mors</main></equip></if>
+		<if eq_sub="Tauret"><equip lock="true"><sub>Tauret</sub></equip></if>
+        </if>
+		<if p_ismoving="true"><equip set="Moving" /></if>	  
+	    <if eq_back="Mecisto. Mantle"><equip lock="true"><back augment="S2651484650913033">Mecisto. Mantle</back></equip></if>	
+		<if eq_rring="Warp Ring"><equip lock="true"><rring>Warp Ring</rring></equip></if>
+		<if eq_rring="Dim. Ring (Holla)"><equip lock="true"><rring>Dim. Ring (Holla)</rring></equip></if>
+		<if eq_rring="Dim. Ring (Dem)"><equip lock="true"><rring>Dim. Ring (Dem)</rring></equip></if>
+		<if eq_rring="Dim. Ring (Mea)"><equip lock="true"><rring>Dim. Ring (Mea)</rring></equip></if>
+		<if eq_rring="Echad Ring"><equip lock="true"><rring>Echad Ring</rring></equip></if>
+		<if eq_rring="Capacity Ring"><equip lock="true"><rring>Capacity Ring</rring></equip></if>
+		<if eq_rring="Trizek Ring"><equip lock="true"><rring>Trizek Ring</rring></equip></if>
+		<if eq_rring="Facility Ring"><equip lock="true"><rring>Facility Ring</rring></equip></if>
+		<if e_area="*Adoulin"><equip><body>Councilor's Garb</body></equip></if>
+    </idlegear>
+
+</ashitacast>

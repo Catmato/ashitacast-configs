@@ -1,0 +1,82 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<head>Ocelomeh headpeice</head>
+			<neck>Wiglen gorget</neck>
+			<lring>Paguroidea Ring</lring>
+			<feet>Danzo Sune-ate</feet>
+			<hands>Clr. mitts +1</hands>
+		</set>
+		<set name="TP">
+				<head>Thurandaut chapeau +1</head>
+				<neck>Iga erimaki</neck>
+				<lear>Suppanomimi</lear>
+				<rear>Moonshade Earring</rear>
+				<body>Hachiya chainmail +1</body>
+				<hands>Otronif gloves</hands>
+				<lring>Rajas Ring</lring>
+				<rring>Tyrant's ring</rring>
+				<back>Yokaze Mantle</back>
+				<waist>Twilight Belt</waist>
+				<legs>Kaabnax trousers</legs>
+				<feet>Otronif boots</feet>
+		</set>
+		<set name="ws" baseset="tp">
+				<hands>Iga tekko +2</hands>
+                <rring>Airy ring</rring>
+				<waist>Anguinus belt</waist>
+				<legs>Byakko's haidate</legs>
+             </set>
+             <set name="Blade: Hi" baseset="tp">
+                <neck>Houyi's gorget</neck>
+				<hands>Iga tekko +2</hands>
+                <rring>Breeze ring</rring>
+				<back>Blithe Mantle</back>
+				<legs>Kaabnax trousers</legs>
+				<waist>Anguinus Belt</waist>		
+		</set>
+		<set name="Precast">
+			<rear>Loquac. Earring</rear>
+		</set>
+		<set name="waltz">
+				<head>Anwig Salade</head>
+		</set>		
+		<set name="Midcast">
+			<legs>Spry tights</legs>
+			<hands>Koga tekko +2</hands>
+			<neck>Stoicheion Medal</neck>
+			<lear>Friomisi Earring</lear>
+			<rear>Hecate's Earring</rear>
+			<lring>Acumen Ring</lring>
+			<back>Toro Cape</back>
+			</set>
+	</sets>
+
+	<idlegear>
+		<if p_status="engaged"><equip set="TP" /></if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<premagic>
+		<equip set="Precast" />
+		<if ad_name="Utsusemi*"><equip><neck>Magoraga Beads</neck></equip></if>
+	</premagic>
+
+	<midmagic>
+		<equip set="Midcast" />
+		<if ad_name="Utsusemi*"><equip><feet>Iga Kyahan +2</feet></equip></if>
+	</midmagic>
+	<weaponskill>
+		<equip set="ws" />
+		<if ad_name="Blade: Hi"><equip set="Blade: Hi" /></if>
+	</weaponskill>
+	 <jobability>
+        <if ad_name="*Waltz*"><equip set="waltz" /></if>
+    </jobability>
+</ashitacast>

@@ -1,0 +1,249 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<ammo>Staunch tathlum</ammo>
+			<head>Valorous Mask</head>
+			<neck>Loricate Torque +1</neck>
+			<body>Kubira Meikogai</body>
+			<hands>Agoge mufflers +1</hands>
+			<lear>Infused Earring</lear>
+			<rear>Ethereal Earring</rear>
+			<lring>Defending Ring</lring>
+			<rring>Dark Ring</rring>
+			<legs>Valorous Hose</legs>
+			<waist>Gishdubar sash</waist>
+			<back>Solemnity Cape</back>
+			<feet>Diama. Sollerets</feet>
+		</set>
+		<set name="enmity">
+			<ammo>Aqreqaq Bomblet</ammo>
+			<neck>Atzintli Necklace</neck>
+			<waist>Goading Belt</waist>
+		</set>
+		<set name="tp">
+			<ammo>Amar Cluster</ammo>
+			<head>Flam. Zucchetto +2</head>
+			<body>Valorous Mail</body>
+			<hands>Flam. Manopolas +2</hands>
+			<legs>Pumm. Cuisses +2</legs>
+			<feet>Flam. Gambieras +2</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Ioskeha Belt</waist>
+			<ear1>Digni. Earring</ear1>
+			<ear2>Mache Earring</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Chirich ring +1</ring2>
+			<back>Cichol's Mantle</back>
+		</set>
+		<set name="ws">
+			<ammo>Knobkierrie</ammo>
+			<head>Flam. Zucchetto +2</head>
+			<body>Pumm. Lorica +2</body>
+			<hands augment="S5418104632334338980">Odyssean Gauntlets</hands>
+			<legs augment="S285877264097961652759">Odyssean Cuisses</legs>
+			<feet>Flam. Gambieras +2</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Ioskeha Belt</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2 augment="S560011287">Moonshade Earring</ear2>
+			<ring1>Niqmaddu ring</ring1>
+			<ring2>Regal ring</ring2>
+			<back>Cichol's Mantle</back>
+		</set>
+		<set name="requiescat" baseset="ws">
+		</set>
+		<set name="Precast">
+			<neck>Voltsurge Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+		</set>
+		<set name="tpkraken">
+			<main>Naegling</main>
+			<sub>Kraken Club</sub>
+			<ammo>Amar Cluster</ammo>
+			<head>Valorous Mask</head>
+			<body>Flamma Korazin +1</body>
+			<hands>Flam. Manopolas +2</hands>
+			<legs>Flamma Dirs +2</legs>
+			<feet>Tatena. Sune.</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Reiki Yotai</waist>
+			<ear1>Digni. Earring</ear1>
+			<ear2>Dedition Earring</ear2>
+			<ring1>Chirich ring +1</ring1>
+			<ring2>Chirich ring +1</ring2>
+			<back>Enuma Mantle</back>
+		</set>
+	</sets>
+	<init> <!--Used for startup commands, parsed once when XML is loaded.. use for keybinds, macro book changes, variable setup, whatever-->
+		<!--Equip tags will not do anything here.  Rules and all other tags will.-->
+		<command>/macro book 3</command>
+		<command delay="1000">/macro set 7</command> <!--I recommend a delay when using macro book and set changes, seems the client doesn't always like both changed at once?-->
+		<command delay="5000">/lockstyleset 5</command>
+	</init>
+	
+	<variables>
+		<var name="autows">off</var>
+		<var name="autosc">off</var>
+		<var name="wstoauto">Upheaval</var>
+		<var name="ReadySC">0</var>
+		<var name="autosamba">off</var>
+	</variables>
+		
+	<inputcommands>
+		<cmd input="/wson">
+			<setvar name="autows" value="on"/>
+			<setvar name="autosc" value="off"/>
+			<addtochat color="50">======== AutoWS enabled ========</addtochat>
+		</cmd>
+		<cmd input="/wsoff">
+			<setvar name="autosc" value="off"/>
+			<setvar name="autows" value="off"/>
+			<addtochat color="50">======== AutoWS disabled ========</addtochat>
+		</cmd>
+		<cmd input="/autoup">
+			<setvar name="wstoauto" value="Upheaval"/>
+			<addtochat color="50">======== AutoWS set to Upheaval ========</addtochat>
+		</cmd>
+		<cmd input="/autofc">
+			<setvar name="wstoauto" value="FellCleave"/>
+			<addtochat color="50">======== AutoWS set to Fell Cleave ========</addtochat>
+		</cmd>
+		<cmd input="/autouf">
+			<setvar name="wstoauto" value="UkkosFury"/>
+			<addtochat color="50">======== AutoWS set to Ukko's Fury ========</addtochat>
+		</cmd>
+		<cmd input="/autoreq">
+			<setvar name="wstoauto" value="Requiescat"/>
+			<addtochat color="50">======== AutoWS set to Requiescat ========</addtochat>
+		</cmd>
+		<cmd input="/autoid">
+			<setvar name="wstoauto" value="Impulse Drive"/>
+			<addtochat color="50">======== AutoWS set to Impulse Drive ========</addtochat>
+		</cmd>
+		<cmd input="/scon">
+			<setvar name="autows" value="off"/>
+			<setvar name="autosc" value="on"/>
+			<setvar name="wstoauto" value="UkkosFury"/>
+			<addtochat color="50">======== AutoSC enabled ========</addtochat>
+		</cmd>
+		<cmd input="/scoff">
+			<setvar name="autows" value="off"/>
+			<setvar name="autosc" value="off"/>
+			<addtochat color="50">======== AutoSC disabled ========</addtochat>
+		</cmd>
+		<cmd input="/autosb">
+			<setvar name="wstoauto" value="SavageBlade"/>
+			<addtochat color="50">======== AutoWS set to Savage Blade ========</addtochat>
+		</cmd>
+		<cmd input="/sambaon">
+			<setvar name="autosamba" value="on"/>
+			<addtochat color="50">======== AutoSamba enabled ========</addtochat>
+		</cmd>
+		<cmd input="/sambaoff">
+			<setvar name="autosamba" value="off"/>
+			<addtochat color="50">======== AutoSamba disabled ========</addtochat>
+		</cmd>
+	</inputcommands>
+
+	<idlegear>
+		<if p_tp="<1000" advanced="$ReadySC=0">
+			<setvar name="ReadySC" value="1"/>
+		</if>
+		<if p_status="engaged">
+			<if eq_sub="Kraken Club">
+				<equip set="TPKraken" />
+			</if>
+			<else>
+				<equip set="TP" />
+			</else>		
+			<if advanced="$autows=on">
+				<if advanced="(%p_tp<999)&(%t_distance<5)">
+					<if advanced="$wstoauto=Upheaval" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Upheaval" &lt;t&gt;</command>
+						<command delay="1500">/ac var set ReadySC 1</command>
+					</if>
+					<if advanced="$wstoauto=Savage Blade" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Savage Blade" &lt;t&gt;</command>
+						<command delay="1500">/ac var set ReadySC 1</command>
+					</if>
+					<if advanced="$wstoauto=FellCleave" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Fell Cleave" &lt;t&gt;</command>
+						<command delay="1500">/ac var set ReadySC 1</command>
+					</if>
+					<if advanced="$wstoauto=UkkosFury" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Ukko's Fury" &lt;t&gt;</command>
+						<command delay="1500">/ac var set ReadySC 1</command>
+					</if>
+					<if advanced="$wstoauto=SavageBlade" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Savage Blade" &lt;t&gt;</command>
+						<command delay="1500">/ac var set ReadySC 1</command>
+					</if>
+					<if advanced="$wstoauto=Requiescat" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Requiescat" &lt;t&gt;</command>
+						<addtochat color="50">======== Use requiescat, change readysc to 1 ========</addtochat>
+						<command delay="1500">/ac var set ReadySC 1</command>
+					</if>
+					<if advanced="$wstoauto=Impulse Drive" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Impulse Drive" &lt;t&gt;</command>
+						<addtochat color="50">======== Use Impulse Drive, change readysc to 1 ========</addtochat>
+						<command delay="1500">/ac var set ReadySC 1</command>
+					</if>					
+				</if>
+			</if>
+			<if advanced="$autosc=on">
+				<if advanced="(%p_tp>999)&(%t_distance<5)">
+					<if advanced="$wstoauto=Upheaval" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Upheaval" &lt;t&gt;</command>
+						<setvar name="wstoauto" value="UkkosFury"/>
+						<addtochat color="50">======== Use upheaval, change ws to ukko ========</addtochat>
+					</if>
+					<if advanced="$wstoauto=UkkosFury" advanced="$ReadySC=1">
+						<setvar name="ReadySC" value="0"/>
+						<command>/ws "Ukko's Fury" &lt;t&gt;</command>
+						<setvar name="wstoauto" value="Upheaval"/>
+						<addtochat color="50">======== Use ukko, change ws to upheaval ========</addtochat>
+					</if>
+				</if>
+			</if>
+			<if advanced="$autosamba=on">
+				<if p_tp=">350&<999">
+					<if buffactive="!370">
+						<command>/ja "Haste Samba" &lt;me&gt;</command>
+					</if>
+				</if>
+			</if>
+		</if>
+		<else>
+			<equip set="Stand" />
+		</else>
+	</idlegear>
+
+	<premagic>
+		<equip set="Precast" />
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<weaponskill>
+		<equip set="ws" />
+	</weaponskill>
+	 <jobability>
+		<if ad_name="Provoke|Warcry">
+			<equip set="enmity" />
+		</if>
+    </jobability>
+</ashitacast>

@@ -1,0 +1,122 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="standard"><!--gear equipped when idle-->
+		</set>
+		<set name="movementspeed" baseset="standard"><!--movement speed gear-->
+		</set>
+		<set name="curing">
+			<main>Daybreak</main>
+			<sub>Culminus</sub>
+			<ammo>Staunch Tathlum</ammo>
+			<head augment="D6258010491332">Vanya Hood</head>
+			<body>Ebers Bliaut +1</body>
+			<hands augment="D7125543571204">Kaykaus Cuffs +1</hands>
+			<legs>Ebers Pant. +1</legs>
+			<feet augment="D6258010491332">Vanya Clogs</feet>
+			<neck augment="O2456978194432372">Loricate Torque +1</neck>
+			<waist>Rumination Sash</waist>
+			<ear1>Gifted Earring</ear1>
+			<ear2>Malignance Earring</ear2>
+			<ring1>Janniston Ring</ring1>
+			<ring2>Evanescence Ring</ring2>
+			<back augment="S81385335331333612714825">Alaunus's Cape</back>
+		</set>
+		<set name="krakentp"><!--tp set if kraken club is equipped-->
+		</set>
+
+		<set name="curaga">
+			<main>Daybreak</main>
+			<sub>Culminus</sub>
+			<ammo>Staunch Tathlum</ammo>
+			<head augment="D6258010491332">Vanya Hood</head>
+			<body>Theo. Bliaut +3</body>
+			<hands augment="D7125543571204">Kaykaus Cuffs +1</hands>
+			<legs>Ebers Pant. +1</legs>
+			<feet augment="D6258010491332">Vanya Clogs</feet>
+			<neck augment="O2456978194432372">Loricate Torque +1</neck>
+			<waist>Rumination Sash</waist>
+			<ear1>Gifted Earring</ear1>
+			<ear2>Malignance Earring</ear2>
+			<ring1>Janniston Ring</ring1>
+			<ring2>Evanescence Ring</ring2>
+			<back augment="S81385335331333612714825">Alaunus's Cape</back>
+		</set>
+		<set name="auroracuraga">
+			<main>Chatoyant Staff</main>
+			<sub>Giuoco Grip</sub>
+			<ammo>Incantor Stone</ammo>
+			<head augment="D6258010491332">Vanya Hood</head>
+			<body>Theo. Bliaut +3</body>
+			<hands augment="D7125543571204">Kaykaus Cuffs +1</hands>
+			<legs>Ebers Pant. +1</legs>
+			<feet augment="D6258010491332">Vanya Clogs</feet>
+			<neck>Cleric's Torque</neck>
+			<waist>Korin Obi</waist>
+			<ear1>Nourish. Earring +1</ear1>
+			<ear2>Roundel Earring</ear2>
+			<ring1>Janniston Ring</ring1>
+			<ring2>Evanescence Ring</ring2>
+			<back>Twilight Cape</back>
+		</set>
+		<set name="standard">
+			<main>Malignance Pole</main>
+			<sub>Giuoco Grip</sub>
+			<ammo>Staunch Tathlum</ammo>
+			<head>Volte Beret</head>
+			<body>Shamash Robe</body>
+			<hands augment="S595659784337">Chironic Gloves</hands>
+			<legs>Assid. Pants +1</legs>
+			<feet>Aya. Gambieras +2</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Embla Sash</waist>
+			<ear1>Gifted Earring</ear1>
+			<ear2>Ethereal Earring</ear2>
+			<ring1>Janniston Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>		
+	</sets>
+	<variables>
+		
+	</variables>
+	<inputcommands>
+
+	</inputcommands>
+	<idlegear>
+	
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<if ad_name="Mage's Ballad">
+			<equip>
+				<range>Crumhorn</range>
+			</equip>
+		</if>
+		<if ad_name="Advancing March">
+			<equip>
+				<range>Nibiru Harp</range>
+			</equip>
+		</if>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>
+
+
+
+
+
+

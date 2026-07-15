@@ -1,0 +1,104 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="standard">
+		</set>
+		<set name="tp">
+			<main>Chocobo Knife</main>
+			<sub>Kraken Club</sub>
+			<range>Wingcutter</range>
+			<head>Meghanada Visor +2</head>
+			<body>Meg. Cuirie +2</body>
+			<hands>Meg. Gloves +2</hands>
+			<legs>Meg. Chausses +2</legs>
+			<feet>Meg. Jam. +2</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Patentia Sash</waist>
+			<ear1>Eabani Earring</ear1>
+			<ear2>Mache Earring</ear2>
+			<ring1>Meghanada Ring</ring1>
+			<ring2>Chirich Ring</ring2>
+			<back augment="S1212416000">Toutatis's Cape</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="autows">off</var>
+		<var name="autosamba">off</var>
+		<var name="ReadySC">0</var>
+		<var name="-enmity">off</var>
+		<var name="wstoauto">Evisceration</var>
+		<var name="incombat">no</var>
+	</variables>
+	<inputcommands>
+		<cmd input="/wson">
+			<setvar name="autows" value="on"/>
+			<addtochat color="50">======== AutoWS enabled: $wstoauto ========</addtochat>
+		</cmd>
+		<cmd input="/wsoff">
+			<setvar name="autows" value="off"/>
+			<addtochat color="50">======== AutoWS disabled ========</addtochat>
+		</cmd>
+		<cmd input="/sambaon">
+			<setvar name="autosamba" value="on"/>
+			<addtochat color="50">======== AutoSamba enabled ========</addtochat>
+		</cmd>
+		<cmd input="/sambaoff">
+			<setvar name="autosamba" value="off"/>
+			<addtochat color="50">======== AutoSamba disabled ========</addtochat>
+		</cmd>
+		<cmd input="/enmityon">
+			<setvar name="-enmity" value="on"/>
+			<addtochat color="50">======== Low Enmity mode enabled ========</addtochat>
+		</cmd>
+		<cmd input="/enmityoff">
+			<setvar name="-enmity" value="off"/>
+			<addtochat color="50">======== Low Enmity mode disabled ========</addtochat>
+		</cmd>
+	</inputcommands>
+	<idlegear>
+		<if p_tp="<1000" advanced="$ReadySC=0">
+			<setvar name="ReadySC" value="1"/>
+		</if>
+		<if p_status="engaged">
+			<equip set="tp"/>
+				<if buffactive="!16">
+					<if advanced="$autows=on" advanced="$ReadySC=1">
+						<if advanced="(%p_tp>999)&(%t_distance<5)">
+								<setvar name="ReadySC" value="0"/>
+								<command>/ws "$wstoauto" &lt;t&gt;</command>
+								<command delay="1500">/ac var set ReadySC 1</command>
+							</if>
+					</if>
+					<if advanced="$autosamba=on">
+						<if p_tp=">350&<999">
+							<if buffactive="!370">
+								<command>/ja "Haste Samba" &lt;me&gt;</command>
+							</if>
+						</if>
+					</if>
+				</if>
+		</if>
+		<else>
+			<equip set="Standard" />
+		</else>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

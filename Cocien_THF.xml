@@ -1,0 +1,455 @@
+<ashitacast>
+    <settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+        <buffupdate>false</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+        <statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+        <hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+        <autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+    </settings>
+    <sets>
+		    <set name="Moving" Baseset="TP">
+		    <feet>Jute Boots +1</feet>
+		</set>	
+        <set name="Idle">
+			<head>Turms Cap +1</head>
+			<body>Turms Harness</body>
+			<hands>Turms Mittens</hands>
+			<legs>Turms Subligar</legs>
+			<feet>Turms Leggings</feet>
+			<ring1>Karieyh Ring</ring1>
+			<ear1>Mache Earring +1</ear1>
+			<ear2>Cessance Earring</ear2>
+		</set>
+		<!-- <set name="WS"> -->
+			<!-- <ammo>Jukukik Feather</ammo> -->
+			<!-- <hands augment="S436408647">Meg. Gloves +1</hands> -->
+			<!-- <legs augment="S2860034291304724601">Herculean Trousers</legs> -->
+			<!-- <ear1>Mache Earring +1</ear1> -->
+			<!-- <ear2>Ishvara Earring</ear2> -->
+		<!-- </set> -->
+		<set name="TH">
+			<hands>Plun. Armlets +2</hands>
+			<feet>Skulk. Poulaines +1</feet>
+			<waist>Chaac belt</waist>
+		</set>
+		<set name="Trial">
+		    <main>Twashtar</main>
+		</set>	
+		<set name="Evisceration">
+			<ammo>Yetshila +1</ammo>
+			<head>Adhemar Bonnet +1</head>
+			<body>Plunderer's Vest +3</body>
+			<hands>Adhemar Wrist. +1</hands>
+			<legs>Lustratio Leggings +1</legs>
+			<feet>Pill. Culottes +2</feet>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Moonshade Earring</ear1>
+			<ear2>Odr Earring</ear2>
+			<ring1>Ilabrat Ring</ring1>
+			<ring2>Petrov Ring</ring2>
+			<back augment="S8137071005542518759">Toutatis's Cape</back>
+		</set>
+		<set name="TP">
+			<ammo>Aurgelmir Orb</ammo>
+			<head>Adhemar Bonnet +1</head>
+			<body>Pillager's Vest +2</body>
+			<hands>Adhemar Wrist. +1</hands>
+			<legs augment="S9380352">Samnuha Tights</legs>
+			<feet>Plun. Poulaines +3</feet>
+			<neck>Asn. Gorget +1</neck>
+			<waist>Reiki Yotai</waist>
+			<ear1>Dedition Earring</ear1>
+			<ear2>Sherida Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Hetairoi Ring</ring2>
+			<back>Toutatis's Cape</back>
+			 <!-- <back augment="S2651484650913033">Mecisto. Mantle</back> -->
+		</set>
+		<set name="dagger">
+			<main>Twashtar</main>
+			<sub>Tauret</sub>
+		</set>
+		<set name="sword">
+			<main>Ibushi shinai</main>
+			<sub>Excalipoor</sub>
+		</set>		
+		<set name="gsword">
+			<main></main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="pole">
+			<main></main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="staff">
+			<main>Chatoyant Staff</main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="pdagger">
+			<main>Wind Knife</main>
+			<sub>Excalipoor</sub>
+		</set>
+		<set name="club">
+			<main>Nmd. Moogle Rod</main>
+			<sub>Excalipoor</sub>
+		</set>
+		<set name="scythe">
+			<main>Ark Scythe</main>
+			<sub>Dilet.'s Grip +1</sub>
+		</set>
+		<set name="Rudra">
+			<ammo>Jukukik Feather</ammo>
+			<head>Pillager's Bonnet +2</head>
+			<body>Plunderer's Vest +3</body>
+			<hands>Meg. Gloves +2</hands>
+			<legs>Mummu Kecks +2</legs>
+			<feet>Lustratio Leggings +1</feet>
+			<neck>Asn. Gorget +1</neck>
+			<waist>Grunfeld Rope</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Odr Earring</ear2>
+			<ring1>Ilabrat Ring</ring1>
+			<ring2>Karieyh Ring</ring2>
+			<back>Toutatis's Cape</back>
+		</set>
+		<set name="Aeolian">
+			<ammo>Ghastly Tathlum</ammo>
+			<head augment="S7256792312834729">Herculean Helm</head>
+			<body augment="S1979136499714720509">Herculean Vest</body>
+			<hands augment="S7046823307706316409">Herculean Gloves</hands>
+			<legs augment="S1917275589869520548">Herculean Trousers</legs>
+			<feet>Turms Leggings</feet>
+			<neck>Baetyl Pendant</neck>
+			<waist>Orpheus's Sash</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Dingir Ring</ring1>
+			<ring2>Karieyh Ring</ring2>
+			<back augment="S8137071005542518759">Toutatis's Cape</back>
+		</set>
+		<set name="dt">
+			<ammo>Staunch Tathlum</ammo>
+			<head>Turms Cap +1</head>
+			<body>Turms Harness</body>
+			<hands>Turms Mittens</hands>
+			<legs>Turms Subligar</legs>
+			<feet>Turms Leggings</feet>
+			<back>Moonbeam Cake</back>
+			<waist>Flume Belt</waist>
+			<neck>Twilight Torque</neck>
+			<ring1>Defending Ring</ring1>
+			<ring2>Vengeful Ring</ring2>
+			<back augment="S8137071005542518759">Toutatis's Cape</back>
+		</set>
+		<set name="crit">
+			<main>Twashtar</main>
+			<sub>Tauret</sub>
+			<ammo>Yetshila +1</ammo>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body augment="M1359">Plunderer's Vest +3</body>
+			<hands>Mummu Wrists +2</hands>
+			<legs>Mummu Kecks +2</legs>
+			<feet>Mummu Gamash. +1</feet>
+			<neck augment="O3006731386880204">Asn. Gorget +1</neck>
+			<waist>Reiki Yotai</waist>
+			<ear1>Odr Earring</ear1>
+			<ear2>Sherida Earring</ear2>
+			<ring1>Apate Ring</ring1>
+			<ring2>Hetairoi Ring</ring2>
+			<back>Sokolski Mantle</back>
+		</set>
+    </sets>
+	<inputcommands>
+		<cmd input="/dt">
+		     <setvar name="dt" value="1"/>
+			 <addtochat color="50">DT IS ACTIVE</addtochat>
+		</cmd>
+        <cmd input="/dtoff">
+             <setvar name="dt" value="0"/>
+             <addtochat color="50">DT IS OFF</addtochat>
+        </cmd>
+		<cmd input="/Rudraon">
+		     <setvar name="autorudra" value="1"/>
+		     <addtochat color="50">Auto Rudra's GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/Rudraoff">
+		     <setvar name="autorudra" value="0"/>
+		     <addtochat color="50">Auto Rudra's OFF</addtochat>
+        </cmd>
+		<cmd input="/Evison">
+		     <setvar name="autoevis" value="1"/>
+		     <addtochat color="50">Auto Evisceration GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/Evisoff">
+		     <setvar name="autoevis" value="0"/>
+		     <addtochat color="50">Auto Evisceration OFF</addtochat>
+        </cmd>
+		<cmd input="/aeo">
+		     <setvar name="autoaeo" value="1"/>
+		     <addtochat color="50">Auto Aeolian GOOOO!!!</addtochat>
+        </cmd>
+		<cmd input="/Aeoff">
+		     <setvar name="autoaeo" value="0"/>
+		     <addtochat color="50">Auto Aeolian OFF</addtochat>
+        </cmd>
+		<cmd input="/th">
+		     <setvar name="treasure" value="1"/>
+			 <setvar name="trial" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="pdagger" value="0"/>
+			 <addtochat color="50">TH IS ACTIVE</addtochat>
+		</cmd>
+        <cmd input="/thoff">
+             <setvar name="treasure" value="0"/>
+             <addtochat color="50">TH IS OFF</addtochat>
+        </cmd>		
+        <cmd input="/trial">
+			 <setvar name="treasure" value="0"/>
+		     <setvar name="trial" value="1"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="pdagger" value="0"/>
+			 <addtochat color="50">TRIAL WEAPON IS ACTIVE</addtochat>
+		</cmd>
+        <cmd input="/trialoff">
+             <setvar name="trial" value="0"/>
+             <addtochat color="50">TRIAL WEAPON IS OFF</addtochat>
+        </cmd>		
+		<cmd input="/staff">
+			 <setvar name="treasure" value="0"/>
+			 <setvar name="trial" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="staff" value="1"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="pdagger" value="0"/>
+		     <addtochat color="50">Staff Equipped</addtochat>
+        </cmd>
+		<cmd input="/staffoff">
+		     <setvar name="staff" value="0"/>
+		     <addtochat color="50">Staff OFF</addtochat>
+        </cmd>
+	    <cmd input="/sword">
+			 <setvar name="treasure" value="0"/>
+			 <setvar name="trial" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="1"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="pdagger" value="0"/>
+		     <addtochat color="50">Swords Equipped</addtochat>
+        </cmd>
+	    <cmd input="/swordoff">
+		     <setvar name="sword" value="0"/>
+		     <addtochat color="50">Swords OFF</addtochat>
+        </cmd>
+		<cmd input="/gsword">
+			 <setvar name="treasure" value="0"/>
+			 <setvar name="trial" value="0"/>
+			 <setvar name="gsword" value="1"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="pdagger" value="0"/>
+		     <addtochat color="50">Gsword Equipped</addtochat>
+        </cmd>
+	    <cmd input="/gswordoff">
+		     <setvar name="gsword" value="0"/>
+		     <addtochat color="50">GSword OFF</addtochat>
+        </cmd>
+		<cmd input="/pdag">
+			 <setvar name="trial" value="0"/>
+			 <setvar name="treasure" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="pdagger" value="1"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="dagger" value="0"/>
+		     <addtochat color="50">Proc Dagger Equipped</addtochat>
+        </cmd>
+	    <cmd input="/pdagoff">
+		     <setvar name="pdagger" value="0"/>
+		     <addtochat color="50">Dagger OFF</addtochat>
+        </cmd>
+		<cmd input="/club">
+			 <setvar name="trial" value="0"/>
+			 <setvar name="treasure" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="1"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="pdagger" value="0"/>
+		     <addtochat color="50">Clubs Equipped</addtochat>
+        </cmd>
+	    <cmd input="/cluboff">
+		     <setvar name="club" value="0"/>
+		     <addtochat color="50">Club OFF</addtochat>
+        </cmd>
+		<cmd input="/pole">
+			 <setvar name="trial" value="0"/>
+			 <setvar name="treasure" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="1"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="pdagger" value="0"/>
+		     <addtochat color="50">Polearm Equipped</addtochat>
+        </cmd>
+	    <cmd input="/poleoff">
+		     <setvar name="pole" value="0"/>
+		     <addtochat color="50">Polearm OFF</addtochat>
+        </cmd>
+		<cmd input="/scythe">
+			 <setvar name="trial" value="0"/>
+			 <setvar name="treasure" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="dagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="1"/>
+			 <setvar name="pdagger" value="0"/>
+		     <addtochat color="50">Scythe Equipped</addtochat>
+        </cmd>
+	    <cmd input="/scytheoff">
+		     <setvar name="scythe" value="0"/>
+		     <addtochat color="50">Scythe OFF</addtochat>
+        </cmd>
+		<cmd input="/dag">
+			 <setvar name="trial" value="0"/>
+			 <setvar name="treasure" value="0"/>
+			 <setvar name="gsword" value="0"/>
+			 <setvar name="sword" value="0"/>
+			 <setvar name="pole" value="0"/>
+			 <setvar name="club" value="0"/>
+			 <setvar name="pdagger" value="0"/>
+			 <setvar name="staff" value="0"/>
+			 <setvar name="scythe" value="0"/>
+			 <setvar name="dagger" value="1"/>
+		     <addtochat color="50">DMG Daggers Equipped</addtochat>
+        </cmd>
+	    <cmd input="/dagoff">
+		     <setvar name="dagger" value="0"/>
+		     <addtochat color="50">DMG Daggers OFF</addtochat>
+        </cmd>
+    </inputcommands>
+    <premagic>
+    </premagic>
+    <midmagic>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<if ad_name="Rudra's Storm"><equip set="Rudra" /></if>
+		
+    </weaponskill>
+    <idlegear>
+        <if p_status="idle">
+            <equip set="Idle" />
+        </if>
+        <if p_status="engaged">
+            <equip set="TP" />
+        </if>
+        <if p_status="resting">
+            <equip set="Resting" />
+        </if>
+		<if advanced="$autorudra=1">
+		   <if p_tp=">1100">
+		   <if p_status="Engaged">
+		      <equip set="Rudra" />  
+		      <command>/ws "Rudra's Storm" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if> 
+		<if advanced="$autoevis=1">
+		   <if p_tp=">999">
+		   <if p_status="Engaged">
+		      <equip set="Evisceration" />  
+		      <command>/ws "Evisceration" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if>
+		<if advanced="$autoaeo=1">
+		   <if p_tp=">999">
+		   <if p_status="Engaged">
+		      <equip set="Aeolian" />  
+		      <command>/ws "Aeolian Edge" &lt;t&gt;</command>
+		   </if>
+		   </if>
+		</if> 		
+		<if advanced="$treasure=1">
+		    <equip set="TH" />
+		</if>	
+		<if advanced="$dt=1">
+		    <equip set="dt" />
+		</if>
+		<if advanced="$trial=1">
+		    <equip set="Trial" />
+		</if>
+		<if advanced="$dagger=1">
+		    <equip set="dagger" />
+		</if>
+		<if advanced="$pdagger=1">
+		    <equip set="pdagger" />
+		</if>
+		<if advanced="$pole=1">
+		    <equip set="pole" />
+		</if>				
+		<if advanced="$club=1">
+		    <equip set="club" />
+		</if>
+		<if advanced="$sword=1">
+		    <equip set="sword" />
+		</if>
+		<if advanced="$gsword=1">
+		    <equip set="gsword" />
+		</if>
+		<if advanced="$staff=1">
+		    <equip set="staff" />
+		</if>
+		<if advanced="$scythe=1">
+		    <equip set="scythe" />
+		</if>		
+		<if p_ismoving="true"><equip set="Moving" /></if>	  
+	    <if eq_back="Mecisto. Mantle"><equip lock="true"><back augment="S2651484650913033">Mecisto. Mantle</back></equip></if>	
+		<if eq_rring="Warp Ring"><equip lock="true"><rring>Warp Ring</rring></equip></if>
+		<if eq_rring="Dim. Ring (Holla)"><equip lock="true"><rring>Dim. Ring (Holla)</rring></equip></if>
+		<if eq_rring="Dim. Ring (Dem)"><equip lock="true"><rring>Dim. Ring (Dem)</rring></equip></if>
+		<if eq_rring="Dim. Ring (Mea)"><equip lock="true"><rring>Dim. Ring (Mea)</rring></equip></if>
+		<if eq_rring="Echad Ring"><equip lock="true"><rring>Echad Ring</rring></equip></if>
+		<if eq_rring="Capacity Ring"><equip lock="true"><rring>Capacity Ring</rring></equip></if>
+		<if eq_rring="Trizek Ring"><equip lock="true"><rring>Trizek Ring</rring></equip></if>
+		<if eq_rring="Facility Ring"><equip lock="true"><rring>Facility Ring</rring></equip></if>
+    </idlegear>
+
+</ashitacast>

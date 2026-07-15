@@ -1,0 +1,274 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<ammo>Staunch tathlum</ammo>
+			<head>Valorous Mask</head>
+			<neck>Loricate Torque +1</neck>
+			<body>Kubira Meikogai</body>
+			<hands>Macabre Gaunt.</hands>
+			<lring>Defending Ring</lring>
+			<rring>Dark Ring</rring>
+			<legs>Valorous Hose</legs>
+			<waist>Gishdubar sash</waist>
+			<back>Solemnity Cape</back>
+			<feet>Danzo Sune-Ate</feet>
+		</set>
+
+		<set name="TP-Yoichi">
+
+		</set>
+
+		<set name="TP-Kraken">
+			<head>Otomi Helm</head>
+			<neck>Ocachi Gorget</neck>
+			<lear>Moonshade Earring</lear>
+			<rear>Mache Earring</rear>
+			<body>Sakonji Domaru +1</body>
+			<hands>Outrider Mittens</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Hoard Ring</rring>
+			<back>Takaha Mantle</back>
+			<waist>Goading Belt</waist>
+			<legs>Tumbler Trunks</legs>
+			<feet>Kar. Sollerets +1</feet>
+		</set>
+
+		<set name="Meditate">
+		</set>
+
+		<set name="PDT">
+			<head>Lithelimb Cap</head>
+			<neck>Twilight Torque</neck>
+			<body>Xaddi Mail</body>
+			<hands>Xaddi Gauntlets</hands>
+			<lring>Defending Ring</lring>
+			<rring>Patricius Ring</rring>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Xaddi Cuisses</legs>
+			<feet>Xaddi Boots</feet>
+		</set>
+
+		<set name="MDT"><!--needs 23-->
+			<neck>Twilight Torque</neck>
+			<lear>Merman's Earring</lear>
+			<rear>Merman's Earring</rear>
+			<lring>Shadow Ring</lring>
+			<rring>Defending Ring</rring>
+			<back>Mollusca Mantle</back>
+		</set>
+
+		<set name="tp">
+
+			<ammo>Ginsen</ammo>
+			<head>Flam. Zucchetto +2</head>
+			<body>Flamma Korazin +2</body>
+			<hands>Flam. Manopolas +2</hands>
+			<legs>Flamma Dirs +2</legs>
+			<feet>Flam. Gambieras +2</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Ioskeha Belt</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Digni. Earring</ear2>
+			<ring1>Flamma Ring</ring1>
+			<ring2>Chirich Ring +1</ring2>
+		</set>
+		<set name="fudo">
+			<ammo>Knobkierrie</ammo>
+			<head>Flam. Zucchetto +2</head>
+			<body>Flamma Korazin +2</body>
+			<hands>Flam. Manopolas +2</hands>
+			<legs>Hiza. Hizayoroi +1</legs>
+			<feet>Flam. Gambieras +2</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Ioskeha Belt</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Ishvara Earring</ear2>
+			<ring1>Niqmaddu Ring</ring1>
+			<ring2>Regal Ring</ring2>
+			<back>Atheling mantle</back>
+		</set>
+		<set name="krakentp">
+			<main>Kraken Club</main>
+			<ammo>Ginsen</ammo>
+			<head augment="S37383668492311">Valorous Mask</head>
+			<body>Flamma Korazin +2</body>
+			<hands augment="S79457331243031">Valorous Mitts</hands>
+			<legs>Hiza. Hizayoroi +1</legs>
+			<feet>Hiza. Sune-Ate +1</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Dedition Earring</ear1>
+			<ear2>Digni. Earring</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Chirich Ring +1</ring2>
+			<back augment="S6098983388167408">Takaha Mantle</back>
+		</set>
+		<set name="apex">
+			<main>Kraken Club</main>
+			<range>Hangaku-no-Yumi</range>
+			<ammo>Eminent Arrow</ammo>
+			<head>Terminal Helm</head>
+			<body>Terminal Plate</body>
+			<hands>Flam. Manopolas +2</hands>
+			<legs>Jokushu Haidate</legs>
+			<feet>Tatena. Sune.</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Ishvara Earring</ear1>
+			<ear2 augment="S560011287">Moonshade Earring</ear2>
+			<ring1>Rufescent Ring</ring1>
+			<ring2>Regal Ring</ring2>
+			<back augment="S6098983388167408">Takaha Mantle</back>
+		</set>
+		<set name="movementspeed">
+			<feet>Danzo Sune-ate</feet>
+		</set>
+		<set name="critws">
+			<ammo>Knobkierrie</ammo>
+			<head augment="S37383668492311">Valorous Mask</head>
+			<body augment="S114448015073348">Valorous Mail</body>
+			<hands>Flam. Manopolas +2</hands>
+			<legs augment="S910117260748832836">Valorous Hose</legs>
+			<feet>Flam. Gambieras +2</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Ioskeha Belt</waist>
+			<ear1 augment="S560011287">Moonshade Earring</ear1>
+			<ear2>Ishvara Earring</ear2>
+			<ring1>Niqmaddu Ring</ring1>
+			<ring2>Regal Ring</ring2>
+		</set>
+		<include>
+		</include>
+	</sets>
+
+	<variables>
+		<var name="autows">off</var><!--is autoWS mode on-->
+		<var name="autosamba">off</var><!--is autoSamba mode on-->
+		<var name="autohasso">off</var>
+		<var name="ReadySC">1</var><!--is it ready to accept WS command-->
+		<var name="-enmity">off</var><!--is low enmity mode on-->
+		<var name="wstoauto">Impulse Drive</var><!--which WS will automatically be used-->
+		<var name="incombat">no</var><!--are we in combat-->
+	</variables>
+	<inputcommands>
+		<cmd input="/wson"><!--command to turn on autoWS mode-->
+			<setvar name="autows" value="on"/><!--enable the mode-->
+			<setvar name="ReadySC" value="1"/><!--get ready to ws in case we have more then 1000 tp when engaging autows-->
+			<addtochat color="50">======== AutoWS enabled: $wstoauto ========</addtochat><!--print enable message and current autows in chat-->
+		</cmd>
+		<cmd input="/wsoff"><!--command to turn off autoWS mode-->
+			<setvar name="autows" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoWS disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/sambaon"><!--command to turn on autoSamba mode-->
+			<setvar name="autosamba" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== AutoSamba enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/sambaoff"><!--command to turn off autoSamba mode-->
+			<setvar name="autosamba" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoSamba disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/hassoon"><!--command to turn on autoSamba mode-->
+			<setvar name="autohasso" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== AutoHasso enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/hassooff"><!--command to turn off autoSamba mode-->
+			<setvar name="autohasso" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoHasso disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/enmityon"><!--command to turn on low enmity mode-->
+			<setvar name="-enmity" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== Low Enmity mode enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/enmityoff"><!--command to turn off low enmity mode-->
+			<setvar name="-enmity" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== Low Enmity mode disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+	</inputcommands>
+	<idlegear>
+		<if p_tp="&lt;1000" advanced="$ReadySC=0"><!--if i have less than 1000 tp, im not in the process of WSing-->
+			<setvar name="ReadySC" value="1"/><!--set the ws ready value-->
+		</if>
+		<if p_status="engaged"><!--TP rules-->
+			<if advanced="(%eq_main=Kraken Club)|(%eq_sub=Kraken Club)"><!--check if kraken is equipped-->
+				<equip set="krakentp"/><!--equip kraken-specific tp set-->
+			</if>
+			<else>
+				<equip set="tp"/><!--equip regular tp set-->
+			</else>
+			<!--AUTOMATION SECTION-->
+			<if buffactive="!16"><!--check for amnesia-->
+				<!--AUTO WS SECTION-->
+				<if advanced="($autows=on)&($ReadySC=1)"><!--is it enabled and not in the process of WSing-->
+					<if advanced="(%p_tp>999)&(%t_distance<5)"><!--check for enough tp and distance to mob-->
+							<setvar name="ReadySC" value="0"/><!--in the process of WSing to not spam attempts-->
+							<command>/ws "$wstoauto" &lt;t&gt;</command><!--use ws-->
+							<command delay="1500">/ac var set ReadySC 1</command><!--try again in 1500ms if it didnt fire-->
+					</if>
+				</if>
+				<!--AUTO SAMBA SECTION-->
+				<if advanced="$autosamba=on">
+					<if p_tp=">350&<999"><!--do i have enough tp and not ready to WS-->
+						<if buffactive="!370"><!--check if haste samba isn't up-->
+							<command>/ja "Haste Samba" &lt;me&gt;</command><!--use haste samba-->
+						</if>
+					</if>
+				</if>
+				<if advanced="$autohasso=on">
+					<if p_tp=">350&<999"><!--do i have enough tp and not ready to WS-->
+						<if buffactive="!353"><!--check if haste samba isn't up-->
+							<command>/ja "Hasso" &lt;me&gt;</command><!--use haste samba-->
+						</if>
+					</if>
+				</if>
+			</if>
+			<!--HAPPENS UPON ENGAGING-->
+			<if advanced="$incombat=no">
+				<setvar name="incombat" value="yes"/><!--engaged flag so stuff only triggers once-->
+				<!--PRINTS AUTOMATION STATUS IN CHAT-->
+				<addtochat color="50">======== Low Enmity mode $-enmity ========</addtochat>
+				<addtochat color="50">======== Auto Samba mode $autosamba ========</addtochat>
+				<addtochat color="50">======== Auto Hasso mode $autohasso ========</addtochat>
+				<if advanced="$autows=on">
+					<addtochat color="50">======== Auto $wstoauto on ========</addtochat>
+				</if>
+				<else>
+					<addtochat color="50">======== AutoWS mode $autows  ========</addtochat>
+				</else>
+			</if>
+		</if>
+		<if p_status="idle"><!--triggers when not doing anything-->
+			<if advanced="$incombat=yes"><!--checks combat flag to get ready for previous section-->
+				<setvar name="incombat" value="no"/><!--sets engaged flag off-->
+			</if>
+			<equip set="Standard" /><!--equip idle gear-->
+			<if p_ismoving="true"><!--check if moving-->
+				<equip set="movementspeed"/>
+			</if>
+		</if>
+		<if p_status="resting"><!--triggers when resting-->
+			<equip set="Resting" />
+		</if>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Meditate"><equip set="Meditate" /></if>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Apex Arrow"><equip set="Apex" /></if>
+		<if ad_name="Tachi: Shoha|Tachi: Fudo|Swift Blade">
+			<equip set="Fudo" />
+		</if>
+		<if ad_name="Impulse Drive|Stardiver|*Thrust|Leg Sweep">
+			<equip set="Fudo" />
+		</if>
+	</weaponskill>
+</ashitacast>

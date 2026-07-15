@@ -1,0 +1,80 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<neck>Loricate Torque +1</neck>
+			<lring>Defending Ring</lring>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="TP">
+			<ammo>Jukukik Feather</ammo>
+			<head>Acro Helm</head>
+			<neck>Combatant's Torque</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Flamma Korazin</body>
+			<hands>Acro Gauntlets</hands>
+			<lring>Chirich Ring +1</lring>
+			<rring>Tyrant's Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Sailfi belt</waist>
+			<legs>Flamma Dirs</legs>
+			<feet>Flam. Gambieras +1</feet>
+		</set>
+		<set name="ws" baseset="tp">
+			<ammo>Aqreqaq Bomblet</ammo>
+			<head>Flamma Zucchetto</head>
+			<lear>Brutal Earring</lear>
+			<rear>Moonshade Earring</rear>
+			<body>Flamma Korazin</body>
+			<hands>Odyssean Gauntlets</hands>
+			<rring>Spiral Ring</rring>
+			<waist>Fotia belt</waist>
+			<feet>Flam. Gambieras +1</feet>
+         </set>
+		<set name="Precast">
+			<rear>Loquac. Earring</rear>
+			<rring>Prolix Ring</rring>
+		</set>
+		<set name="waltz">
+		</set>		
+		<set name="Midcast">
+			<lring>Acumen Ring</lring>
+		</set>
+		<set name="enmity">
+			<ammo>Aqreqaq Bomblet</ammo>
+			<neck>Atzintli Necklace</neck>
+			<waist>Goading Belt</waist>
+		</set>
+	</sets>
+
+	<idlegear>
+		<if p_status="engaged"><equip set="TP" /></if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<premagic>
+		<equip set="Precast" />
+		<if ad_name="Utsusemi*">
+			<equip set="utcast"/>
+		</if>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<weaponskill>
+		<equip set="ws" />
+	</weaponskill>
+	 <jobability>
+        <if ad_name="*Waltz*">
+			<equip set="waltz" />
+		</if>
+		<if ad_name="Provoke|Warcry">
+			<equip set="enmity" />
+		</if>
+    </jobability>
+</ashitacast>

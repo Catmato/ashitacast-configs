@@ -1,0 +1,46 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="tp">
+			<main>Demers. Degen +1</main>
+			<ammo>Ginsen</ammo>
+			<head augment="D2993700736703">Despair Helm</head>
+			<body augment="D1637204898050">Vanya Robe</body>
+			<hands>Despair Fin. Gaunt.</hands>
+			<legs>Crimson Cuisses</legs>
+			<feet augment="M0">Estq. Houseaux +2</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Swift Belt</waist>
+			<ear1>Influx Earring</ear1>
+			<ear2>Upsurge Earring</ear2>
+			<ring1>Tyrant's Ring</ring1>
+			<ring2>Adler Ring</ring2>
+			<back>Atheling Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

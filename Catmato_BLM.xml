@@ -1,0 +1,311 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="standard"><!--gear equipped when idle-->
+		</set>
+		<set name="krakentp" baseset="tp"><!--tp set if kraken club is equipped-->
+		</set>
+		<set name="tp">
+			<main>Maxentius</main>
+			<ammo>Amar Cluster</ammo>
+			<head>Alhazen Hat</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Jhakri Cuffs</hands>
+			<legs>Jhakri Slops</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck>Combatant's Torque</neck>
+			<waist>Null Belt</waist>
+			<ear1>Digni. Earring</ear1>
+			<ear2>Mache Earring</ear2>
+			<ring1>Chirich Ring +1</ring1>
+			<ring2>Chirich Ring +1</ring2>
+			<back>Aurist's Cape +1</back>
+		</set>
+		<set name="nuke">
+			<main>Maxentius</main>
+			<sub>Culminus</sub>
+			<ammo>Hydrocera</ammo>
+			<head>Volte Beret</head>
+			<body augment="S141032100907141">Merlinic Jubbah</body>
+			<hands augment="D15479298603780">Amalric Gages</hands>
+			<legs augment="D15479298603780">Amalric Slops</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Null Belt</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Malignance Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<back>Toro Cape</back>
+		</set>
+		<set name="darknuke" baseset="nuke">
+			<head>Pixie Hairpin +1</head>
+		</set>
+		<set name="drain">
+			<main>Daybreak</main>
+			<sub>Culminus</sub>
+			<ammo>Hydrocera</ammo>
+			<head>Pixie Hairpin +1</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Regal Cuffs</hands>
+			<legs>Mallquis Trews +2</legs>
+			<feet>Merlinic Crackows</feet>
+			<neck>Erra Pendant</neck>
+			<waist>Fucho-no-Obi</waist>
+			<ear1>Gifted Earring</ear1>
+			<ear2>Malignance Earring</ear2>
+			<ring1>Excelsis Ring</ring1>
+			<ring2>Evanescence Ring</ring2>
+			<back>Perimede Cape</back>
+		</set>
+		<set name="fastcast">
+			<main>Oranyan</main>
+			<sub>Niobid Strap</sub>
+			<ammo>Hydrocera</ammo>
+			<head>Welkin Crown</head>
+			<body augment="S44582304692736138819652">Merlinic Jubbah</body>
+			<hands>Regal Cuffs</hands>
+			<legs augment="D15479298603780">Amalric Slops</legs>
+			<feet>Merlinic Crackows</feet>
+			<neck>Voltsurge Torque</neck>
+			<waist>Embla Sash</waist>
+			<ear1>Malignance Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Prolix Ring</ring1>
+			<ring2>Kishar Ring</ring2>
+			<back>Perimede Cape</back>
+		</set>
+		<set name="fastcastnuke" baseset="fastcast">
+			<hands>Mallquis Cuffs +2</hands>
+			<legs>Mallquis Trews +2</legs>
+			<feet>Mallquis Clogs +2</feet>
+		</set>
+		<set name="movementspeed">
+			<feet>Herald's Gaiters</feet>
+		</set>
+		<set name="blackhalo">
+
+		</set>
+		<set name="physws">
+			<hands>Jhakri Cuffs</hands>
+			<legs augment="S4538629517158636934">Merlinic Shalwar</legs>
+			<feet augment="S152095976860124646">Merlinic Crackows</feet>
+			<neck>Clotharius Torque</neck>
+			<ear1>Moonshade Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Petrov Ring</ring1>
+			<ring2>Shukuyu Ring</ring2>
+		</set>
+		<set name="magicws">
+			<ammo>Hydrocera</ammo>
+			<head>Volte Beret</head>
+			<body augment="S141032100907141">Merlinic Jubbah</body>
+			<hands augment="D15479298603780">Amalric Gages</hands>
+			<legs augment="S4538629517158636934">Merlinic Shalwar</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Malignance Earring</ear2>
+			<ring1>Mallquis Ring</ring1>
+			<ring2>Vertigo Ring</ring2>
+			<back>Toro Cape</back>
+		</set>
+		<set name="test">
+			<body augment="S141032100907141">Merlinic Jubbah</body>
+		</set>
+		<set name="macc">
+			<main>Maxentius</main>
+			<sub>Ammur</sub>
+			<ammo>Hydrocera</ammo>
+			<head>Volte Beret</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Regal Cuffs</hands>
+			<legs>Mallquis Trews +2</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck>Erra Pendant</neck>
+			<waist>Null Belt</waist>
+			<ear1>Digni. Earring</ear1>
+			<ear2>Malignance Earring</ear2>
+			<ring1>Stikini Ring +1</ring1>
+			<ring2>Stikini Ring +1</ring2>
+			<back>Aurist's Cape +1</back>
+		</set>
+	</sets>
+	<variables>
+		<var name="autows">off</var><!--is autoWS mode on-->
+		<var name="autosamba">off</var><!--is autoSamba mode on-->
+		<var name="autohasso">off</var>
+		<var name="ReadySC">1</var><!--is it ready to accept WS command-->
+		<var name="-enmity">off</var><!--is low enmity mode on-->
+		<var name="wstoauto">heavy swing</var><!--which WS will automatically be used-->
+		<var name="incombat">no</var><!--are we in combat-->
+		<var name="autoam">off</var><!--is autoAftermath mode on-->
+		<var name="aftermathws">Mystic Boon</var><!--which WS will used to trigger aftermath-->
+	</variables>
+	<inputcommands>
+		<cmd input="/wson"><!--command to turn on autoWS mode-->
+			<setvar name="autows" value="on"/><!--enable the mode-->
+			<setvar name="ReadySC" value="1"/><!--get ready to ws in case we have more then 1000 tp when engaging autows-->
+			<addtochat color="50">======== AutoWS enabled: $wstoauto ========</addtochat><!--print enable message and current autows in chat-->
+		</cmd>
+		<cmd input="/wsoff"><!--command to turn off autoWS mode-->
+			<setvar name="autows" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoWS disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/sambaon"><!--command to turn on autoSamba mode-->
+			<setvar name="autosamba" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== AutoSamba enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/sambaoff"><!--command to turn off autoSamba mode-->
+			<setvar name="autosamba" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoSamba disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/hassoon"><!--command to turn on hasso mode-->
+			<setvar name="autohasso" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== AutoHasso enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/hassooff"><!--command to turn off hasso mode-->
+			<setvar name="autohasso" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== AutoHasso disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/enmityon"><!--command to turn on low enmity mode-->
+			<setvar name="-enmity" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== Low Enmity mode enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/enmityoff"><!--command to turn off low enmity mode-->
+			<setvar name="-enmity" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== Low Enmity mode disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+		<cmd input="/amon"><!--command to turn on auto aftermath mode-->
+			<setvar name="autoam" value="on"/><!--enable the mode-->
+			<addtochat color="50">======== Aftermath mode enabled ========</addtochat><!--print enable message in chat-->
+		</cmd>
+		<cmd input="/amoff"><!--command to turn off auto aftermath mode-->
+			<setvar name="autoam" value="off"/><!--disable the mode-->
+			<addtochat color="50">======== Aftermath mode disabled ========</addtochat><!--print disable message in chat-->
+		</cmd>
+	</inputcommands>
+	<idlegear>
+		<if p_tp="&lt;1000" advanced="$ReadySC=0"><!--if i have less than 1000 tp, im not in the process of WSing-->
+			<setvar name="ReadySC" value="1"/><!--set the ws ready value-->
+		</if>
+		<if p_status="engaged"><!--TP rules-->
+			<if advanced="(%eq_main=Kraken Club)|(%eq_sub=Kraken Club)"><!--check if kraken is equipped-->
+				<equip set="krakentp"/><!--equip kraken-specific tp set-->
+			</if>
+			<else>
+				<equip set="tp"/><!--equip regular tp set-->
+			</else>
+			<!--AUTOMATION SECTION-->
+			<if buffactive="!16&!10&!2&!19$!14&!17&!28"><!--check for amnesia(16), stun(10), sleep(2,19), charm(14,17), terror(28) -->
+				<!--AUTO WS SECTION-->
+				<if advanced="($autows=on)&($ReadySC=1)"><!--is it enabled and not in the process of WSing-->
+					<if advanced="(%p_tp>999)&(%t_distance<5)"><!--check for enough tp and distance to mob-->
+							<setvar name="ReadySC" value="0"/><!--in the process of WSing to not spam attempts-->
+							<command>/ws "$wstoauto" &lt;t&gt;</command><!--use ws-->
+							<command delay="1500">/ac var set ReadySC 1</command><!--try again in 1500ms if it didnt fire-->
+					</if>
+				</if>
+				<!--AUTO AFTERMATH SECTION-->
+				<if advanced="($autoam=on)&($ReadySC=1)"><!--is it enabled and not in the process of WSing-->
+					<if advanced="(%p_tp>999)&(%t_distance<5)"><!--check for enough tp and distance to mob-->
+						<if buffactive="272"><!-- check if aftermath is active-->
+							<setvar name="ReadySC" value="0"/><!--in the process of WSing to not spam attempts-->
+							<command>/ws "$wstoauto" &lt;t&gt;</command><!--use ws-->
+							<command delay="1500">/ac var set ReadySC 1</command><!--try again in 1500ms if it didnt fire-->
+						</if>
+					</if>
+					<if advanced="(%p_tp=3000)&(%t_distance<5)&(buffactive=!272)"><!-- build tp to 3000 to get aftermath-->
+					<setvar name="ReadySC" value="0"/><!--in the process of WSing to not spam attempts-->
+							<command>/ws "$aftermathws" &lt;t&gt;</command><!--use ws-->
+							<command delay="1500">/ac var set ReadySC 1</command><!--try again in 1500ms if it didnt fire-->
+					</if>
+				</if>
+				<!--AUTO SAMBA SECTION-->
+				<if advanced="$autosamba=on">
+					<if p_tp=">350&<999"><!--do i have enough tp and not ready to WS-->
+						<if buffactive="!370"><!--check if haste samba isn't up-->
+							<command>/ja "Haste Samba" &lt;me&gt;</command><!--use haste samba-->
+						</if>
+					</if>
+				</if>
+				<if advanced="$autohasso=on">
+					<if p_tp="<999"><!--do i not ready to WS-->
+						<if buffactive="!353"><!--check if hasso isn't up-->
+							<command>/ja "Hasso" &lt;me&gt;</command><!--use hasso-->
+						</if>
+					</if>
+				</if>
+			</if>
+			<!--HAPPENS UPON ENGAGING-->
+			<if advanced="$incombat=no">
+				<setvar name="incombat" value="yes"/><!--engaged flag so stuff only triggers once-->
+				<!--PRINTS AUTOMATION STATUS IN CHAT-->
+				<addtochat color="50">======== Low Enmity mode $-enmity ========</addtochat>
+				<addtochat color="50">======== Auto Samba mode $autosamba ========</addtochat>
+				<if advanced="$autows=on">
+					<addtochat color="50">======== Auto $wstoauto on ========</addtochat>
+				</if>
+				<else>
+					<addtochat color="50">======== AutoWS mode $autows  ========</addtochat>
+				</else>
+			</if>
+		</if>
+		<if p_status="idle"><!--triggers when not doing anything-->
+			<if advanced="$incombat=yes"><!--checks combat flag to get ready for previous section-->
+				<setvar name="incombat" value="no"/><!--sets engaged flag off-->
+			</if>
+			<equip set="Standard" /><!--equip idle gear-->
+			<if p_ismoving="true"><!--check if moving-->
+				<equip set="movementspeed"/>
+			</if>
+		</if>
+		<if p_status="resting"><!--triggers when resting-->
+			<equip set="Resting" />
+		</if>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<equip set="fastcast"/>
+		<if ad_skill="ElementalMagic">
+			<equip set="fastcastnuke"/>
+		</if>
+	</premagic>
+	<midmagic>
+		<if ad_skill="ElementalMagic">
+			<equip set="nuke"/>
+			<if ad_name="Comet">
+				<equip set="darknuke"/>
+			</if>
+			<if ad_name="Shock|Rasp|Choke|Frost|Burn|Drown">
+				<equip set="macc"/>
+			</if>
+
+		</if>
+		<if ad_name="Drain*|Aspir*|Sleep*">
+			<equip set="Drain"/>
+		</if>
+		<if ad_skill="EnfeeblingMagic">
+			<equip set="macc"/>
+		</if>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<if ad_name="Aeolian Edge|Shining Strike|Vidohunir|Rock Crusher|Earth Crusher|Cataclysm|Gust Slash|Cyclone">
+			<equip set="magicws"/>
+		</if>
+		<else>
+			<equip set="physws"/>
+		</else>
+	</weaponskill>
+</ashitacast>
